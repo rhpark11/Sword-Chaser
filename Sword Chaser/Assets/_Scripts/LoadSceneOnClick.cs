@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class LoadSceneOnClick : MonoBehaviour
 {
-    public void LoadByIndex(int sceneIndex)
+    public void LoadLevel(string level)
     {
-        SceneManager.LoadScene(sceneIndex);
+        SceneManager.LoadScene(level);
     }
 
 }
