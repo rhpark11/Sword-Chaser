@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Scenes/Darren's scene.unity
+    path: Assets/_Scenes/Main Menu Scene.unity
     guid: 83b90540356bdd54990fd09c6f0b1493
   - enabled: 1
-    path: Assets/_Scenes/Jon's scene.unity
-    guid: c47df357ee87b8f4e81bd1aef167d268
+    path: Assets/_Scenes/Darren's Scene.unity
+    guid: b0c17769508bc834da1191ccef35bcbd
