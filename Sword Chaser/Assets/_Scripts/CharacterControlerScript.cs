@@ -12,13 +12,13 @@ public class CharacterControlerScript : MonoBehaviour {
     public Transform groundCheck;
     float groundRadius = 0.2f;
     public LayerMask whatIsGround;
-
+    /*
     //need something here to check for ceilings
     bool ceiling = false;
     public Transform ceilingCheck;
     float ceilingRadius = 0.2f;
     public LayerMask whatIsCeiling;
-
+    */
     public float jumpForce = 500f;
     public float slideForce = 7000f;
 
@@ -39,15 +39,16 @@ public class CharacterControlerScript : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
-        anim.SetBool("Ground", grounded);
-        anim.SetFloat("vSpeed", GetComponent<Rigidbody2D>().velocity.y);  //detects failing and jumping vertical speed
+        //anim.SetBool("Ground", grounded);
+        //anim.SetFloat("vSpeed", GetComponent<Rigidbody2D>().velocity.y);  //detects failing and jumping vertical speed
         float move = Input.GetAxis("Horizontal");
-        anim.SetFloat("Speed", 1);//Mathf.abs(move) replaced with 1
+        //anim.SetFloat("Speed", 1);//Mathf.abs(move) replaced with 1
 
         //ceiling = Physics2D.OverlapCircle(ceilingCheck.position, ceilingRadius, whatIsCeiling);
         
         //control player movement
-        GetComponent<Rigidbody2D>().velocity = new Vector2(4, GetComponent<Rigidbody2D>().velocity.y);
+        //GetComponent<Rigidbody2D>().velocity = new Vector2(4, GetComponent<Rigidbody2D>().velocity.y);
+        GetComponent<Rigidbody2D>().velocity = new Vector2(move * maxSpeed, GetComponent<Rigidbody2D>().velocity.y);
         /*
         if(!sliding && !anim.GetCurrentAnimatorStateInfo(0).IsTag("slide"))
         {
@@ -66,6 +67,7 @@ public class CharacterControlerScript : MonoBehaviour {
             Flip();
         */
     }
+    /*
     void Update()
     {
         if(grounded && Input.GetKeyDown(KeyCode.Space))
@@ -103,5 +105,5 @@ public class CharacterControlerScript : MonoBehaviour {
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
-    }
+    }*/
 }
