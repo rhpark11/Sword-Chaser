@@ -11,12 +11,13 @@ public class GenereateTile : MonoBehaviour {
     public int distanceX;
     public int distanceY;
     private int frames;
-    public int generateXFrame;
+    public int generateXFrame = 5;
+    public int platLength = 3;
     private int genframe;
     void Start()
     {
         Tilemap tilemap = GetComponent<Tilemap>();
-        tilemap.SetTile(position, tileA);
+       
         genframe = generateXFrame;
     }
     void Update()
@@ -27,7 +28,9 @@ public class GenereateTile : MonoBehaviour {
         if (genframe == frames)
         {
             Tilemap tilemap = GetComponent<Tilemap>();
-            tilemap.SetTile(position += new Vector3Int(distanceX, distanceY, 0), tileA);
+            for(int i = 0; i<platLength; ++i)
+                tilemap.SetTile(position += new Vector3Int(distanceX+i, distanceY, 0), tileA);
+            
             genframe +=generateXFrame;
         }
        // Tilemap tilemap = GetComponent<Tilemap>();
