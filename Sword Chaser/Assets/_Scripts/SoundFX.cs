@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SoundFX : MonoBehaviour {
 
+    public HUDscript hud;
     public AudioSource audioSource;
     public AudioClip audioClip;
 	
@@ -11,6 +12,10 @@ public class SoundFX : MonoBehaviour {
 
         if (other.tag == "coin_19")
         {
+            GameObject go = GameObject.Find("Main Camera");
+            HUDscript hud = (HUDscript)go.GetComponent(typeof(HUDscript));
+            //hud = GameObject.Find("Main Camera").GetComponent<HUDscript>();
+            hud.IncreaseScore(1);
             audioSource.GetComponent<AudioSource>();
             audioSource.PlayOneShot(audioClip);
             Destroy(other.gameObject);

@@ -144,6 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27f3945c2b0a13b43b2ed2200ad782b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hud: {fileID: 871639016}
   soundSource: {fileID: 1004405269}
   sound: {fileID: 8300000, guid: 05770b1892718420ea79fdcdb156345b, type: 3}
 --- !u!58 &116724346
@@ -291,6 +292,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114505075786707718, guid: 7272ac00a29840d4fad47fd6d670854c,
+        type: 2}
+      propertyPath: hud
+      value: 
+      objectReference: {fileID: 871639016}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7272ac00a29840d4fad47fd6d670854c, type: 2}
   m_IsPrefabParent: 0
@@ -746,6 +752,7 @@ GameObject:
   - component: {fileID: 871639012}
   - component: {fileID: 871639011}
   - component: {fileID: 871639015}
+  - component: {fileID: 871639016}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -828,6 +835,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1816521677}
+--- !u!114 &871639016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 871639010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9935716518f43ea47874fd57c79472f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &878650261
 GameObject:
   m_ObjectHideFlags: 0
@@ -860,6 +878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27f3945c2b0a13b43b2ed2200ad782b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hud: {fileID: 871639016}
   soundSource: {fileID: 1004405269}
   sound: {fileID: 8300000, guid: 05770b1892718420ea79fdcdb156345b, type: 3}
 --- !u!58 &878650263
@@ -1521,6 +1540,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114505075786707718, guid: 7272ac00a29840d4fad47fd6d670854c,
+        type: 2}
+      propertyPath: hud
+      value: 
+      objectReference: {fileID: 871639016}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7272ac00a29840d4fad47fd6d670854c, type: 2}
   m_IsPrefabParent: 0
@@ -1884,6 +1908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27f3945c2b0a13b43b2ed2200ad782b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hud: {fileID: 871639016}
   soundSource: {fileID: 1004405269}
   sound: {fileID: 8300000, guid: 05770b1892718420ea79fdcdb156345b, type: 3}
 --- !u!58 &1836895985

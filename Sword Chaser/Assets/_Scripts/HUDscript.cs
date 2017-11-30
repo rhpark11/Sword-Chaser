@@ -6,6 +6,7 @@ public class HUDscript : MonoBehaviour {
 
     float time = 0f;
     float seconds = 0f;
+    float score = 0f;
 
     // Update is called once per frame
     void Update()
@@ -17,14 +18,14 @@ public class HUDscript : MonoBehaviour {
             time = 0f;
         }
     }
-    /*
     public void IncreaseScore(int amount)
     {
-        time += amount;
-    }*/
+        score += amount;
+    }
 
     private void OnGUI()
     {
         GUI.Label(new Rect(10, 10, 100, 30), "Time: " + seconds);
+        GUI.Label(new Rect(10, 40, 100, 30), "Score: " + score);
     }
 }
