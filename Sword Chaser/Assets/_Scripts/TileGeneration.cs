@@ -15,6 +15,7 @@ public class TileGeneration : MonoBehaviour {
 
     public GameObject[] platformsA;
 	void Start () {
+        
         platWidth = plat.GetComponent<BoxCollider2D>().size.x;
 	}
 	
