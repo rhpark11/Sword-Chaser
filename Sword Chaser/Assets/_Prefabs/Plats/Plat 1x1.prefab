@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212720278739294718}
   - component: {fileID: 61132304064918064}
   - component: {fileID: 114675614161520442}
+  - component: {fileID: 114889520336775750}
   m_Layer: 0
   m_Name: Plat 1x1
   m_TagString: Untagged
@@ -50,7 +51,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1321548803097658}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 3626fe8e008014f6bbd19bb72937b311, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -78,6 +79,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d307a54bed750bc4eb850d218a27799c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114889520336775750
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1321548803097658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e557b92b9b8f154aa97f661168bbe10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platDestruction: {fileID: 1321548803097658}
+  destructorName: Destroyer
 --- !u!212 &212720278739294718
 SpriteRenderer:
   m_ObjectHideFlags: 1
