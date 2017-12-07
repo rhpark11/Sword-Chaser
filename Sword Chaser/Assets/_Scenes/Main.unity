@@ -441,10 +441,10 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1669429441}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 442, y: 202.5, z: 0}
+  m_LocalPosition: {x: 457, y: 120.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1774327566}
+  - {fileID: 1859820194}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -453,11 +453,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!224 &1774327566 stripped
-RectTransform:
-  m_PrefabParentObject: {fileID: 224395661560950838, guid: 5cf3cd88642550e49a86ab732a747f8a,
-    type: 2}
-  m_PrefabInternal: {fileID: 1859820193}
 --- !u!1001 &1859820193
 Prefab:
   m_ObjectHideFlags: 0
@@ -563,6 +558,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5cf3cd88642550e49a86ab732a747f8a, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &1859820194 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1859820193}
 --- !u!114 &2102292721 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114394457075074982, guid: 47c63831962d4c94a934c77d141c70da,
