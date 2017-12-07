@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4441622835489278}
   - component: {fileID: 212720278739294718}
   - component: {fileID: 61132304064918064}
-  - component: {fileID: 114675614161520442}
   - component: {fileID: 114889520336775750}
   m_Layer: 0
   m_Name: Plat 1x1
@@ -68,17 +67,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &114675614161520442
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1321548803097658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d307a54bed750bc4eb850d218a27799c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114889520336775750
 MonoBehaviour:
   m_ObjectHideFlags: 1
