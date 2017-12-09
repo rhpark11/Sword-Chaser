@@ -5,7 +5,6 @@ using UnityEngine;
 public class EnemyFaker : MonoBehaviour {
 
     public float jumpForce = 100f;
-    
     bool grounded = false;
     public Transform groundCheck;
     float groundRadius = 0.2f;
@@ -24,15 +23,28 @@ public class EnemyFaker : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Debug.Log("in on trigger");
-
+        //Debug.Log(triggerCounter);
+        
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
         
         if (grounded && collision.tag == "Player")
         {
             Debug.Log("in if grounded");
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
+            
+            { gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce)); }
+
         }
         
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("in OnCollisionEnter2D");
+
+        if (collision.gameObject.tag == "Player")
+        {
+            Debug.Log("in if tag == Player");
+            Destroy(collision.gameObject, 0.1f);
+        }
     }
 }

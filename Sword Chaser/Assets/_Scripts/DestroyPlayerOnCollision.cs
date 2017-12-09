@@ -15,7 +15,7 @@ public class DestroyPlayerOnCollision : MonoBehaviour {
 	}
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player")
+        if(collision.tag == "Player" && gameObject != null)
         {
             Destroy(collision.gameObject, 0.1f);
             //call the game over script because player object has been destroyed
