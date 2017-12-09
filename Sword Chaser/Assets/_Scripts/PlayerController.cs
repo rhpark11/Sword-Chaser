@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour {
         //check to see if player has touched a ceiling
         ceiling = Physics2D.OverlapCircle(ceilingCheck.position, ceilingRadius, whatIsCeiling);
         anim.SetBool("Ceiling", ceiling);
-        Debug.Log(ceiling);
+        //Debug.Log(ceiling);
 
         float move = Input.GetAxis("Horizontal");
         if (move != 0) {
