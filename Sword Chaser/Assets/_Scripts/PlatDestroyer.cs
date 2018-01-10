@@ -16,6 +16,7 @@ public class PlatDestroyer : MonoBehaviour {
 		if (transform.position.x <platDestruction.transform.position.x)
         {
             Destroy(gameObject);
+            //gameObject.SetActive(false);
         }
 	}
 }
