@@ -102,4 +102,9 @@ public class PlayerController : MonoBehaviour {
             }
         }
     }
+
+    public float getYAxis()
+    {
+        return transform.position.y;
+    }
 }

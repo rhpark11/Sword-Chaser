@@ -28,4 +28,13 @@ public class HUDscript : MonoBehaviour {
         GUI.Label(new Rect(10, 10, 100, 30), "Time: " + seconds);
         GUI.Label(new Rect(10, 40, 100, 30), "Score: " + score);
     }
+
+    public float getScore()
+    {
+        return score;
+    }
+    public float getTime()
+    {
+        return seconds;
+    }
 }
