@@ -6,7 +6,8 @@ public class TileGeneration : MonoBehaviour {
     public GameObject[] thePlatforms;
     public GameObject[] theEnemies;
     public Transform generationPoint;
-    public float distanceBetween;
+    public float distanceBetweenPlatforms;
+    public float distanceEnemyPlat;
 
     private float platformWidth;
     public float platformdDistanceBetweenMin;
@@ -35,21 +36,21 @@ public class TileGeneration : MonoBehaviour {
     {
         if (transform.position.x <generationPoint.position.x)
         {
-            distanceBetween = Random.Range(platformdDistanceBetweenMin, platformDistanceBetweenMax);
-            platFormSelector = Random.Range(0, thePlatforms.Length);
-            enemySelector = Random.Range(0, theEnemies.Length);
+            distanceBetweenPlatforms = Random.Range(platformdDistanceBetweenMin, platformDistanceBetweenMax);
+            platFormSelector = Random.Range(0, thePlatforms.Length);//picks a random platform to spawn
+            enemySelector = Random.Range(0, theEnemies.Length);//picks a random enemy to spawn
             heightChange = transform.position.y + Random.Range(maxHeightChange,-maxHeightChange);
             if (heightChange > maxHeight)
             {
-                heightChange = maxHeight;
+                heightChange = maxHeight; //the platforms can't go off the camera
             }
             else if(heightChange <minHeight)
             {
-                heightChange = minHeight;
+                heightChange = minHeight; //the platforms can't go off the camera
             }
-            transform.position = new Vector3(transform.position.x + (platFormWidths[platFormSelector])/2 + distanceBetween, heightChange, transform.position.z);
-            Instantiate(theEnemies[enemySelector], transform.position, transform.rotation);
-            Instantiate(thePlatforms[platFormSelector], transform.position, transform.rotation);
+            transform.position = new Vector3(transform.position.x + (platFormWidths[platFormSelector])/2 + distanceBetweenPlatforms, heightChange, transform.position.z);//the position of the new platform
+            Instantiate(theEnemies[enemySelector], new Vector3(transform.position.x,transform.position.y+distanceEnemyPlat,transform.position.z), transform.rotation);//instantiate the enemy
+            Instantiate(thePlatforms[platFormSelector], transform.position, transform.rotation);//instantiates the platform
         }
     }
 }
