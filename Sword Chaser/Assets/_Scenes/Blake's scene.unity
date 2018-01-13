@@ -457,7 +457,7 @@ Transform:
   - {fileID: 1599141647}
   - {fileID: 1851594599}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &354773381
 GameObject:
@@ -524,7 +524,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4582365125338136, guid: 0324bd1b04acae645bfd0554176670f3, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114935361926936782, guid: 0324bd1b04acae645bfd0554176670f3,
         type: 2}
@@ -615,7 +615,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4240399977349068, guid: 1bf4afb96de7370469b7604dcbc082a6, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1790850440058404, guid: 1bf4afb96de7370469b7604dcbc082a6, type: 2}
       propertyPath: m_Name
@@ -659,6 +659,10 @@ MonoBehaviour:
   thePlatforms:
   - {fileID: 1790850440058404, guid: 1bf4afb96de7370469b7604dcbc082a6, type: 2}
   - {fileID: 1329205142630044, guid: 0324bd1b04acae645bfd0554176670f3, type: 2}
+  theEnemies:
+  - {fileID: 1456563667915604, guid: b03e3e3a1637b814d8e8851904f95ff8, type: 2}
+  - {fileID: 1312910837034690, guid: 0e985e3a86da7b447978f61220b56860, type: 2}
+  - {fileID: 1416182763047084, guid: 83ba6db9165ab024d97c7ec251c8206c, type: 2}
   generationPoint: {fileID: 1567089738}
   distanceBetween: 4
   platformdDistanceBetweenMin: 4
@@ -677,7 +681,7 @@ Transform:
   m_Children:
   - {fileID: 354773382}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1567089737
 GameObject:
@@ -800,7 +804,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4240399977349068, guid: 1bf4afb96de7370469b7604dcbc082a6, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114025929852356526, guid: 1bf4afb96de7370469b7604dcbc082a6,
         type: 2}

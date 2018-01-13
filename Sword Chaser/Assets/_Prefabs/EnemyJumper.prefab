@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 114740084472674250}
   - component: {fileID: 114518313698069018}
   - component: {fileID: 70038577703931692}
+  - component: {fileID: 114214860979753582}
   m_Layer: 11
   m_Name: EnemyJumper
   m_TagString: Eneny Jumper
@@ -124,6 +125,19 @@ CapsuleCollider2D:
   m_Offset: {x: 0.017833875, y: 0}
   m_Size: {x: 0.8573278, y: 1}
   m_Direction: 0
+--- !u!114 &114214860979753582
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1312910837034690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e557b92b9b8f154aa97f661168bbe10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platDestruction: {fileID: 1312910837034690}
+  destructorName: Destroyer
 --- !u!114 &114518313698069018
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -146,7 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 730a70c7fa0931c4cb72f00b56e656c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 100
+  jumpForce: 300
   groundCheck: {fileID: 4410574763685008}
   whatIsGround:
     serializedVersion: 2

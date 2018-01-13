@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TileGeneration : MonoBehaviour {
     public GameObject[] thePlatforms;
+    public GameObject[] theEnemies;
     public Transform generationPoint;
     public float distanceBetween;
 
@@ -12,6 +13,7 @@ public class TileGeneration : MonoBehaviour {
     public float platformDistanceBetweenMax;
 
     private int platFormSelector;
+    private int enemySelector;
     private float[] platFormWidths;
 
     private float minHeight;
@@ -35,6 +37,7 @@ public class TileGeneration : MonoBehaviour {
         {
             distanceBetween = Random.Range(platformdDistanceBetweenMin, platformDistanceBetweenMax);
             platFormSelector = Random.Range(0, thePlatforms.Length);
+            enemySelector = Random.Range(0, theEnemies.Length);
             heightChange = transform.position.y + Random.Range(maxHeightChange,-maxHeightChange);
             if (heightChange > maxHeight)
             {
@@ -45,7 +48,7 @@ public class TileGeneration : MonoBehaviour {
                 heightChange = minHeight;
             }
             transform.position = new Vector3(transform.position.x + (platFormWidths[platFormSelector])/2 + distanceBetween, heightChange, transform.position.z);
-            
+            Instantiate(theEnemies[enemySelector], transform.position, transform.rotation);
             Instantiate(thePlatforms[platFormSelector], transform.position, transform.rotation);
         }
     }
