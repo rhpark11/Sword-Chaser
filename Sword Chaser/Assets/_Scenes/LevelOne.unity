@@ -695,8 +695,13 @@ MonoBehaviour:
   thePlatforms:
   - {fileID: 1790850440058404, guid: 1bf4afb96de7370469b7604dcbc082a6, type: 2}
   - {fileID: 1329205142630044, guid: 0324bd1b04acae645bfd0554176670f3, type: 2}
+  theEnemies:
+  - {fileID: 1456563667915604, guid: b03e3e3a1637b814d8e8851904f95ff8, type: 2}
+  - {fileID: 1312910837034690, guid: 0e985e3a86da7b447978f61220b56860, type: 2}
+  - {fileID: 1416182763047084, guid: 83ba6db9165ab024d97c7ec251c8206c, type: 2}
   generationPoint: {fileID: 155369065}
-  distanceBetween: 4
+  distanceBetweenPlatforms: 0
+  distanceEnemyPlat: 0
   platformdDistanceBetweenMin: 4
   platformDistanceBetweenMax: 6
   maxHeightPoint: {fileID: 67901015}
