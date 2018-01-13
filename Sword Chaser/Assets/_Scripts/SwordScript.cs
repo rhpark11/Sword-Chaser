@@ -16,6 +16,8 @@ public class SwordScript : MonoBehaviour {
     private float acceleration = 3.0f;
     private float initialVelocity = 8.0f;
 
+    public LayerMask whatIsGround;
+
     // Use this for initialization
     void Start () {
         frequency = 1 / Time.deltaTime;

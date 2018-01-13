@@ -351,6 +351,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: Slide
     m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: Ground
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102150237391866524}
   m_Solo: 0
