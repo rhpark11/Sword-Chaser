@@ -5,13 +5,17 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
     Animator anim;
+    //Rigidbody2D rb;
+    bool isJumpRunning;
+    float maxJumpTime;
+    float jumpTime;
 
     bool startGame = false; //start the motion of the player
     float start = 0;//don't start running until player moves the character
 
     /* use these to check if grounded to run jump or fall states
     */
-    public float jumpForce = 500f;
+    public float jumpForce = 3f;
     bool grounded = false;
     public Transform groundCheck;
     float groundRadius = 0.2f;
@@ -36,8 +40,12 @@ public class PlayerController : MonoBehaviour {
     
     // Use this for initialization
     void Start () {
+        //rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         anim.SetBool("StartGame", false);
+        isJumpRunning = false;
+        maxJumpTime = 1.0f;
+        jumpTime = 0.0f;
     }
 	
     void FixedUpdate()
@@ -58,6 +66,32 @@ public class PlayerController : MonoBehaviour {
             start = 1;
             anim.SetBool("StartGame", true);  //start the run animation on key press, needed to smooth beginning fall in test scene
         }
+
+        //Jumping using addforce (physics applications should be in fixedupdate)
+        //when you hold space, the player jumps higher.
+        if (grounded && Input.GetKey(KeyCode.Space) && !sliding && !isJumpRunning)
+        {
+            GetComponent<Rigidbody2D>().AddForce(Vector2.up * jumpForce);
+            jumpTime += Time.deltaTime;
+            anim.SetBool("Ground", false);
+            isJumpRunning = true;
+        }
+        else if(isJumpRunning)
+        {
+            if (!Input.GetKey(KeyCode.Space) || jumpTime>=maxJumpTime)
+            {
+                isJumpRunning = false;
+                jumpTime = 0.0f;
+            }
+            else
+            {
+                jumpTime += Time.deltaTime;
+                //Debug.Log(jumpTime);
+                anim.SetBool("Ground", false);
+                GetComponent<Rigidbody2D>().AddForce(Vector2.up * (jumpForce/jumpTime));
+            }
+        }
+
         //set variable for animator; always running
         anim.SetFloat("Speed", start);// Mathf.Abs(move));
 
@@ -70,13 +104,6 @@ public class PlayerController : MonoBehaviour {
         //set velocity of player to the right
         if (startGame) {
             GetComponent<Rigidbody2D>().velocity = new Vector2(4, GetComponent<Rigidbody2D>().velocity.y);
-        }
-        
-        //if the player is grounded and the space is pressed then jump
-        if (grounded && Input.GetKeyDown(KeyCode.Space) && !sliding)
-        {
-            anim.SetBool("Ground", false);
-            GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
         }
 
         //if player is sliding and ceiling is above, then keep sliding
@@ -107,4 +134,5 @@ public class PlayerController : MonoBehaviour {
     {
         return transform.position.y;
     }
+
 }

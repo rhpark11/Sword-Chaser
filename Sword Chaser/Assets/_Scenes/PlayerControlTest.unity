@@ -1845,6 +1845,16 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114498087670873468, guid: c39ca8bc11eee7b48b7d4539ba96185c,
+        type: 2}
+      propertyPath: jumpForce
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114498087670873468, guid: c39ca8bc11eee7b48b7d4539ba96185c,
+        type: 2}
+      propertyPath: whatIsGround.m_Bits
+      value: 4294923743
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c39ca8bc11eee7b48b7d4539ba96185c, type: 2}
   m_IsPrefabParent: 0
