@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DestroyPlayerOnCollision : MonoBehaviour {
 
+    public GameOver gameover;
+
 	// Use this for initialization
 	void Start () {
         //Destroy(gameObject, 3f); destroy after a delay
@@ -17,6 +19,7 @@ public class DestroyPlayerOnCollision : MonoBehaviour {
     {
         if(collision.tag == "Player" && gameObject != null)
         {
+            gameover.gameOver();
             Destroy(collision.gameObject, 0.1f);
             //call the game over script because player object has been destroyed
         }

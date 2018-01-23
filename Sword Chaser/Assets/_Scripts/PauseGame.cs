@@ -5,7 +5,6 @@ using UnityEngine;
 public class PauseGame : MonoBehaviour {
 
     public Transform canvas;
-    public GameOver gOver;
 
     private void Start()
     {
@@ -17,9 +16,7 @@ public class PauseGame : MonoBehaviour {
 
     void Update ()
     {
-        if (gOver.isGameOver == true)
-        {}
-        else if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             Pause();
         }
@@ -27,18 +24,15 @@ public class PauseGame : MonoBehaviour {
 
     public void Pause()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (canvas.gameObject.activeInHierarchy == false)
         {
-            if (canvas.gameObject.activeInHierarchy == false)
-            {
-                canvas.gameObject.SetActive(true);
-                Time.timeScale = 0;
-            }
-            else
-            {
-                canvas.gameObject.SetActive(false);
-                Time.timeScale = 1;
-            }
+            canvas.gameObject.SetActive(true);
+            Time.timeScale = 0;
+        }
+        else
+        {
+            canvas.gameObject.SetActive(false);
+            Time.timeScale = 1;
         }
     }
     public void Resume()

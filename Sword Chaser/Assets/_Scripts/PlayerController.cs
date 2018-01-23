@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour {
 
     /* use these to check if grounded to run jump or fall states
     */
-    public float jumpForce = 3f;
+    public float jumpForce = 3.2f;
     bool grounded = false;
     public Transform groundCheck;
     float groundRadius = 0.2f;
@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour {
         anim = GetComponent<Animator>();
         anim.SetBool("StartGame", false);
         isJumpRunning = false;
-        maxJumpTime = 1.0f;
+        maxJumpTime = 0.25f;
         jumpTime = 0.0f;
     }
 	
@@ -88,7 +88,7 @@ public class PlayerController : MonoBehaviour {
                 jumpTime += Time.deltaTime;
                 //Debug.Log(jumpTime);
                 anim.SetBool("Ground", false);
-                GetComponent<Rigidbody2D>().AddForce(Vector2.up * (jumpForce/jumpTime));
+                GetComponent<Rigidbody2D>().AddForce(Vector2.up * (jumpForce/jumpTime)*2f);
             }
         }
 

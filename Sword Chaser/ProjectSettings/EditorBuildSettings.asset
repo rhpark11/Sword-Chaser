@@ -11,3 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Darren's Scene.unity
     guid: b0c17769508bc834da1191ccef35bcbd
+  - enabled: 1
+    path: Assets/_Scenes/LevelOne.unity
+    guid: c8235c9a8fefc41469fa2de4a99b1c3a
+  - enabled: 1
+    path: Assets/_Scenes/PlayerControlTest.unity
+    guid: fa793ddacad89ae4894aab99b48f2f7f
