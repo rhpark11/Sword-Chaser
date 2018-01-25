@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class EnemyFaker : MonoBehaviour {
 
-    public float jumpForce = 100f;
+    public float jumpForce = 200f;
     bool grounded = false;
     public Transform groundCheck;
     float groundRadius = 0.2f;
     public LayerMask whatIsGround;
 
+    public GameOver gameover;
 
     // Use this for initialization
     void Start () {
@@ -45,6 +46,7 @@ public class EnemyFaker : MonoBehaviour {
         {
             Debug.Log("in if tag == Player");
             Destroy(collision.gameObject, 0.1f);
+            gameover.gameOver();
         }
     }
 }
