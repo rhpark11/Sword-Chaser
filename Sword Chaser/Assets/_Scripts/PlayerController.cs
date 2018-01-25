@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour {
 
     /* use these to check if grounded to run jump or fall states
     */
-    public float jumpForce = 3.2f;
+    public float jumpForce = 3.5f;
     bool grounded = false;
     public Transform groundCheck;
     float groundRadius = 0.2f;
@@ -71,7 +71,7 @@ public class PlayerController : MonoBehaviour {
         //when you hold space, the player jumps higher.
         if (grounded && Input.GetKey(KeyCode.Space) && !sliding && !isJumpRunning)
         {
-            GetComponent<Rigidbody2D>().AddForce(Vector2.up * jumpForce);
+            GetComponent<Rigidbody2D>().AddForce(Vector2.up * jumpForce*2f);
             jumpTime += Time.deltaTime;
             anim.SetBool("Ground", false);
             isJumpRunning = true;
@@ -88,12 +88,33 @@ public class PlayerController : MonoBehaviour {
                 jumpTime += Time.deltaTime;
                 //Debug.Log(jumpTime);
                 anim.SetBool("Ground", false);
-                GetComponent<Rigidbody2D>().AddForce(Vector2.up * (jumpForce/jumpTime)*2f);
+                GetComponent<Rigidbody2D>().AddForce(Vector2.up * (jumpForce/jumpTime)*3f);
             }
         }
 
-        //set variable for animator; always running
-        anim.SetFloat("Speed", start);// Mathf.Abs(move));
+        if(!grounded && Input.GetKeyDown(KeyCode.LeftControl) && !sliding)
+        {
+            slideTimer = 0f;
+            anim.SetBool("Slide", true);
+            sliding = true;
+            GetComponent<Rigidbody2D>().AddForce(Physics2D.gravity * 2f, ForceMode2D.Impulse);
+        }
+        /*
+        if (sliding)
+        {
+            slideTimer += Time.deltaTime;
+
+            if (slideTimer > maxSlideTime && !ceiling)
+            {
+                sliding = false;
+                anim.SetBool("Slide", false);
+                gameObject.GetComponent<Collider2D>().enabled = true;
+                //SlideCollider.GetComponent<Collider2D>().enabled = false;  //not need as of now see above slide comments
+            }
+        }*/
+
+            //set variable for animator; always running
+            anim.SetFloat("Speed", start);// Mathf.Abs(move));
 
         //set variable for animator; set the vertical speed to play the jump animations from the Blend Tree
         anim.SetFloat("vSpeed", GetComponent<Rigidbody2D>().velocity.y);
@@ -107,7 +128,7 @@ public class PlayerController : MonoBehaviour {
         }
 
         //if player is sliding and ceiling is above, then keep sliding
-        if (!sliding && Input.GetKeyDown(KeyCode.LeftControl))
+        if (!sliding && Input.GetKeyDown(KeyCode.LeftControl) && !isJumpRunning)
         {
             slideTimer = 0f;
             anim.SetBool("Slide", true);

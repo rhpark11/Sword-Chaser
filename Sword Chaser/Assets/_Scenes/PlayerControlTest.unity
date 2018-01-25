@@ -231,13 +231,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 17
       objectReference: {fileID: 0}
+    - target: {fileID: 114021013227568852, guid: b03e3e3a1637b814d8e8851904f95ff8,
+        type: 2}
+      propertyPath: gameover
+      value: 
+      objectReference: {fileID: 236735026}
     - target: {fileID: 1456563667915604, guid: b03e3e3a1637b814d8e8851904f95ff8, type: 2}
       propertyPath: m_Name
       value: enemy faker
-      objectReference: {fileID: 0}
-    - target: {fileID: 1456563667915604, guid: b03e3e3a1637b814d8e8851904f95ff8, type: 2}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b03e3e3a1637b814d8e8851904f95ff8, type: 2}
@@ -2168,15 +2169,15 @@ Prefab:
       propertyPath: m_RootOrder
       value: 16
       objectReference: {fileID: 0}
-    - target: {fileID: 1312910837034690, guid: 0e985e3a86da7b447978f61220b56860, type: 2}
-      propertyPath: m_Name
-      value: enemy jumper
-      objectReference: {fileID: 0}
     - target: {fileID: 114518313698069018, guid: 0e985e3a86da7b447978f61220b56860,
         type: 2}
       propertyPath: gameover
       value: 
       objectReference: {fileID: 236735026}
+    - target: {fileID: 1312910837034690, guid: 0e985e3a86da7b447978f61220b56860, type: 2}
+      propertyPath: m_Name
+      value: enemy jumper
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0e985e3a86da7b447978f61220b56860, type: 2}
   m_IsPrefabParent: 0
