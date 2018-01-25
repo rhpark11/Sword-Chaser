@@ -122,11 +122,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4864505240915276, guid: 0e985e3a86da7b447978f61220b56860, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 17.07
+      value: 29.75
       objectReference: {fileID: 0}
     - target: {fileID: 4864505240915276, guid: 0e985e3a86da7b447978f61220b56860, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.5883306
+      value: 7.78
       objectReference: {fileID: 0}
     - target: {fileID: 4864505240915276, guid: 0e985e3a86da7b447978f61220b56860, type: 2}
       propertyPath: m_LocalPosition.z
@@ -154,13 +154,18 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1312910837034690, guid: 0e985e3a86da7b447978f61220b56860, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114518313698069018, guid: 0e985e3a86da7b447978f61220b56860,
         type: 2}
       propertyPath: gameover
       value: 
       objectReference: {fileID: 236735026}
+    - target: {fileID: 114740084472674250, guid: 0e985e3a86da7b447978f61220b56860,
+        type: 2}
+      propertyPath: whatIsGround.m_Bits
+      value: 4294919679
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0e985e3a86da7b447978f61220b56860, type: 2}
   m_IsPrefabParent: 0
@@ -438,6 +443,8 @@ MonoBehaviour:
   period: 0
   phase: 0
   startMoving: 0
+  playerHasSword: 0
+  player: {fileID: 0}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 0
@@ -1468,6 +1475,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1024717117 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1371741191465748, guid: c39ca8bc11eee7b48b7d4539ba96185c,
+    type: 2}
+  m_PrefabInternal: {fileID: 2102715781}
 --- !u!1001 &1071346333
 Prefab:
   m_ObjectHideFlags: 0
@@ -1775,6 +1787,11 @@ Prefab:
       propertyPath: m_Layer
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 114651550157707564, guid: 5a4ab3eab0901d14fb4557f1c051b58a,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1024717117}
     m_RemovedComponents:
     - {fileID: 58259577649752114, guid: 5a4ab3eab0901d14fb4557f1c051b58a, type: 2}
     - {fileID: 58151865026067862, guid: 5a4ab3eab0901d14fb4557f1c051b58a, type: 2}
@@ -2177,6 +2194,11 @@ Prefab:
     - target: {fileID: 1312910837034690, guid: 0e985e3a86da7b447978f61220b56860, type: 2}
       propertyPath: m_Name
       value: enemy jumper
+      objectReference: {fileID: 0}
+    - target: {fileID: 114740084472674250, guid: 0e985e3a86da7b447978f61220b56860,
+        type: 2}
+      propertyPath: whatIsGround.m_Bits
+      value: 4294919679
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0e985e3a86da7b447978f61220b56860, type: 2}

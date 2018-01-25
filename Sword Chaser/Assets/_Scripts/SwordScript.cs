@@ -10,6 +10,10 @@ public class SwordScript : MonoBehaviour {
 
     public bool startMoving = false;
 
+    public bool playerHasSword = false;
+    public GameObject player;
+    private bool swordSetup = false;
+
     private float frequency, angularFrequency, elapsedTime = 0;
     
     private float x, y = 0;
@@ -28,7 +32,7 @@ public class SwordScript : MonoBehaviour {
 	void Update () {
 
 
-        if (startMoving)
+        if (startMoving && !playerHasSword)
         {
             x = elapsedTime;
             y = Mathf.Sin(x);
@@ -46,13 +50,34 @@ public class SwordScript : MonoBehaviour {
             //make a range of amplitudes that goes from small to large, sequential or random maybe possilbe, use an array with random index calls
         }
 
+        if(playerHasSword)
+        {
+            Debug.Log(playerHasSword);
+            if(swordSetup == false)
+            {
+                this.gameObject.transform.SetParent(player.transform);
+                // Debug.Log("Sword's Parent: " + player.transform.parent.name);
+                transform.Translate(-0.7f, 0, 0);
+                swordSetup = true;
+            }
+            //count down a time and set the playerHasSword bool to false
+            /*if(time is zero)
+            {
+                playerHasSword = false;
+            }
+            */
+        }
     }
-
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player")
         {
             startMoving = true;
+        }
+        if (startMoving == true)
+        {
+            playerHasSword = true;
         }
     }
 }
