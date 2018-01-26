@@ -13,10 +13,15 @@ public class PlatDestroyer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (transform.position.x <platDestruction.transform.position.x)
+        touchCheck();
+	}
+
+    void touchCheck()
+    {
+        if (transform.position.x < platDestruction.transform.position.x)
         {
             Destroy(gameObject);
             //gameObject.SetActive(false);
         }
-	}
+    }
 }

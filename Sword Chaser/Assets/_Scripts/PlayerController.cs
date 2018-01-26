@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour {
 
     /* use these to check if grounded to run jump or fall states
     */
-    public float jumpForce = 3.5f;
+    public float jumpForce = 4f;
     bool grounded = false;
     public Transform groundCheck;
     float groundRadius = 0.2f;
@@ -69,9 +69,9 @@ public class PlayerController : MonoBehaviour {
 
         //Jumping using addforce (physics applications should be in fixedupdate)
         //when you hold space, the player jumps higher.
-        if (grounded && Input.GetKey(KeyCode.Space) && !sliding && !isJumpRunning)
+        if (grounded && Input.GetKey(KeyCode.Space) && !isJumpRunning)
         {
-            GetComponent<Rigidbody2D>().AddForce(Vector2.up * jumpForce*2f);
+            GetComponent<Rigidbody2D>().AddForce(Vector2.up * jumpForce*3.5f);
             jumpTime += Time.deltaTime;
             anim.SetBool("Ground", false);
             isJumpRunning = true;
@@ -87,31 +87,18 @@ public class PlayerController : MonoBehaviour {
             {
                 jumpTime += Time.deltaTime;
                 //Debug.Log(jumpTime);
-                anim.SetBool("Ground", false);
-                GetComponent<Rigidbody2D>().AddForce(Vector2.up * (jumpForce/jumpTime)*3f);
+                //anim.SetBool("Ground", false);
+                GetComponent<Rigidbody2D>().AddForce(Vector2.up * (jumpForce/jumpTime)*2f);
             }
         }
 
-        if(!grounded && Input.GetKeyDown(KeyCode.LeftControl) && !sliding)
+        if(!grounded && Input.GetKeyDown(KeyCode.LeftControl))
         {
-            slideTimer = 0f;
+            //slideTimer = 0f;
             anim.SetBool("Slide", true);
             sliding = true;
             GetComponent<Rigidbody2D>().AddForce(Physics2D.gravity * 2f, ForceMode2D.Impulse);
         }
-        /*
-        if (sliding)
-        {
-            slideTimer += Time.deltaTime;
-
-            if (slideTimer > maxSlideTime && !ceiling)
-            {
-                sliding = false;
-                anim.SetBool("Slide", false);
-                gameObject.GetComponent<Collider2D>().enabled = true;
-                //SlideCollider.GetComponent<Collider2D>().enabled = false;  //not need as of now see above slide comments
-            }
-        }*/
 
             //set variable for animator; always running
             anim.SetFloat("Speed", start);// Mathf.Abs(move));
@@ -127,7 +114,20 @@ public class PlayerController : MonoBehaviour {
             GetComponent<Rigidbody2D>().velocity = new Vector2(4, GetComponent<Rigidbody2D>().velocity.y);
         }
 
+        //sliding while holding control. When you release control, player stops sliding
+        if(!sliding && Input.GetKeyDown(KeyCode.LeftControl) && !isJumpRunning)
+        {
+            anim.SetBool("Slide", true);
+            sliding = true;
+        }
+        else if(Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            anim.SetBool("Slide", false);
+            sliding = false;
+        }
+        
         //if player is sliding and ceiling is above, then keep sliding
+        /*
         if (!sliding && Input.GetKeyDown(KeyCode.LeftControl) && !isJumpRunning)
         {
             slideTimer = 0f;
@@ -140,7 +140,7 @@ public class PlayerController : MonoBehaviour {
         if (sliding)
         {
             slideTimer += Time.deltaTime;
-
+            
             if (slideTimer > maxSlideTime && !ceiling)
             {
                 sliding = false;
@@ -148,7 +148,7 @@ public class PlayerController : MonoBehaviour {
                 gameObject.GetComponent<Collider2D>().enabled = true;
                 //SlideCollider.GetComponent<Collider2D>().enabled = false;  //not need as of now see above slide comments
             }
-        }
+        }*/
     }
 
     public float getYAxis()
