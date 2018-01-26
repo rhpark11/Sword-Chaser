@@ -328,7 +328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1f4395d45ca87143aa02c11e69ab4a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 3
+  jumpForce: 1
   groundCheck: {fileID: 1607969627}
   whatIsGround:
     serializedVersion: 2
@@ -337,7 +337,7 @@ MonoBehaviour:
   whatIsCeiling:
     serializedVersion: 2
     m_Bits: 4294966783
-  maxSlideTime: 1
+  maxSlideTime: 2
   SlideCollider: {fileID: 1851594597}
 --- !u!58 &341123978
 CircleCollider2D:
