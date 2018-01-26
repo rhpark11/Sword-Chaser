@@ -24,7 +24,7 @@ public class TileGeneration : MonoBehaviour {
     private float heightChange;
     void Start()
     {
-        platFormWidths = new float[thePlatforms.Length];
+        platFormWidths = new float[thePlatforms.Length];// gets new platforms
         for (int i = 0; i<thePlatforms.Length; ++i)
         {
             platFormWidths[i] = thePlatforms[i].GetComponent<BoxCollider2D>().size.x;
