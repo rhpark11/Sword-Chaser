@@ -30,7 +30,7 @@ public class EnemyFaker : MonoBehaviour {
         
         if (grounded && collision.tag == "Player")
         {
-            Debug.Log("in if grounded");
+            //Debug.Log("in if grounded");
             
             { gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce)); }
 
@@ -44,7 +44,7 @@ public class EnemyFaker : MonoBehaviour {
 
         if (collision.gameObject.tag == "Player")
         {
-            Debug.Log("in if tag == Player");
+            //Debug.Log("in if tag == Player");
             Destroy(collision.gameObject, 0.1f);
             gameover.gameOver();
         }
