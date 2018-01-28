@@ -16,7 +16,8 @@ public class PlayerController : MonoBehaviour {
     /* use these to check if grounded to run jump or fall states
     */
     public float jumpForce = 4f;
-    bool grounded = false;
+    public bool grounded = false;
+    public static bool playerIsGrounded = true;//static variable for SwordScript to reference
     public Transform groundCheck;
     float groundRadius = 0.2f;
     public LayerMask whatIsGround;
@@ -54,6 +55,7 @@ public class PlayerController : MonoBehaviour {
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
         //set variable for animator to queue animation
         anim.SetBool("Ground", grounded);
+        playerIsGrounded = grounded;
 
         //check to see if player has touched a ceiling
         ceiling = Physics2D.OverlapCircle(ceilingCheck.position, ceilingRadius, whatIsCeiling);

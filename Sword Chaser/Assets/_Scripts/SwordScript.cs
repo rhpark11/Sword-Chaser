@@ -10,12 +10,20 @@ public class SwordScript : MonoBehaviour {
 
     public bool startMoving = false;
 
+    public GameObject player;
+
+    //****Player has the sword variables
     public bool playerHasSword = false;
     public float swordTime = 5;
+    
     private float swordTimer = 0;
-    public GameObject player;
+    private bool adjustSwordUp = true;
+    private bool adjustSwordDown = true;
+    private bool resetSwordDynamics = false;
     private bool swordSetup = false;
     private float rockingMotion = 0;
+    private int numberOfRotations = 0;
+    //****
 
     private float frequency, angularFrequency, elapsedTime = 0;
     
@@ -28,12 +36,10 @@ public class SwordScript : MonoBehaviour {
     // Use this for initialization
     void Start () {
         frequency = 1 / Time.deltaTime;
-
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
 
         if (startMoving && !playerHasSword)//player first encounters the sword or swordTimer is up
         {
@@ -55,7 +61,7 @@ public class SwordScript : MonoBehaviour {
 
         if(playerHasSword)
         {
-            //Debug.Log("player has sword " + playerHasSword);
+            
             if(swordSetup)
             {
                 this.gameObject.transform.SetParent(player.transform);
@@ -75,9 +81,10 @@ public class SwordScript : MonoBehaviour {
 
                 this.gameObject.transform.SetParent(null);  //break the parent child relationship
                 this.gameObject.transform.Translate(0.5f, 0, 0);  //break the collision by translation in local space
-
-                playerHasSword = false;  //player no longer has the  sword
                 
+                playerHasSword = false;  //player no longer has the  sword
+                //Debug.Log("player has sword " + playerHasSword);
+
                 //reset the variables for sword escape
                 elapsedTime = 0;
                 initialVelocity = 8;
@@ -86,23 +93,80 @@ public class SwordScript : MonoBehaviour {
                 //reset the rotation
                 this.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
             }
-            if (swordTimer > 0)
+            else// if (swordTimer > 0)
             {
-                //sword rocking back and forth
-                elapsedTime += Time.deltaTime;
-                rockingMotion = Mathf.Sin(9 * elapsedTime);
-                int flipAxis = 1;
-                if (rockingMotion < 0)
+                float player_Y_velocity = player.GetComponent<Rigidbody2D>().velocity.y;
+                
+                //player is falling
+                if (player_Y_velocity < -5.0)
                 {
-                    flipAxis = -1;
+                    if (adjustSwordUp)
+                    {
+                        //transform.rotation = Quaternion.Euler(0, 0, 15f); 
+                        //transform.Translate(0, 0.1f, 0);
+                        adjustSwordUp = false;
+                        resetSwordDynamics = true;
+                    }
+                    
+                    
                 }
-                float randomAngle = Random.Range(0.4f, 0.7f);
-                          
+                //player is jumping
+                else if (player_Y_velocity > 2.0)
+                {
+                    if (adjustSwordDown)
+                    {
+                        transform.rotation = Quaternion.Euler(0, 0, -15f);
+                        transform.Translate(0, -0.1f, 0);
+                        adjustSwordDown = false;
+                        resetSwordDynamics = true;
+                    }
+                }
+                else //player is grounded or at peak of jump
+                {
+                    if(resetSwordDynamics)
+                    {
+                        if (!adjustSwordDown)
+                        {
+                            transform.Translate(0, 0.1f, 0);
+                            transform.rotation = Quaternion.Euler(0, 0, 0f);
+                            adjustSwordDown = true;   
+                        }
+                        else if (!adjustSwordUp)
+                        {
+                            //transform.Translate(0, -0.1f, 0);
+                            //transform.rotation = Quaternion.Euler(0, 0, 0f);
+                            adjustSwordUp = true;
+                        }
+                        resetSwordDynamics = false;
+                    }
+                    //sword rocking back and forth
+                    if(PlayerController.playerIsGrounded)
+                    {
+                        if(numberOfRotations > 0)
+                        {
+                            transform.RotateAround(player.transform.position, Vector3.forward, numberOfRotations * -0.8f);
+                            numberOfRotations = 0;
+                        }
 
-                Debug.Log(flipAxis);
-                //this.gameObject.transform.RotateAround( player.transform.position, Vector3.up, 10 * rockingMotion);//this is kinda cool
-                this.gameObject.transform.RotateAround(player.transform.position, new Vector3(0, 0, flipAxis), randomAngle);
-                //this.gameObject.transform.rotation = Quaternion.Euler(0, 0, flipAxis); //not rotating about the right point
+                        elapsedTime += Time.deltaTime;
+                        rockingMotion = Mathf.Sin(9 * elapsedTime);
+                        int flipAxis = 1;
+                        if (rockingMotion < 0)
+                        {
+                            flipAxis = -1;
+                        }
+                        float randomAngle = Random.Range(0.4f, 0.7f);
+
+                        //this.gameObject.transform.RotateAround( player.transform.position, Vector3.up, 10 * rockingMotion);//this is kinda cool
+                        this.gameObject.transform.RotateAround(player.transform.position, new Vector3(0, 0, flipAxis), randomAngle);
+                    }
+                    else
+                    {
+                        numberOfRotations++;
+                        this.gameObject.transform.RotateAround(player.transform.position, Vector3.forward, 0.8f);
+                    }
+                    
+                }
             }
         }
     }
@@ -111,7 +175,7 @@ public class SwordScript : MonoBehaviour {
     {
         if(collision.gameObject.tag == "Player")
         {
-           startMoving = true;
+           //startMoving = true;
         }
         
     }
