@@ -38,7 +38,10 @@ public class PlayerController : MonoBehaviour {
     public float maxSlideTime = 1.0f;  //adjust this along with sampling in animation window to control the slide
     [SerializeField]
     GameObject SlideCollider;  //reference to the collider game object
-    
+
+    //**********RUNES**************
+    public int runes = 0;
+
     // Use this for initialization
     void Start () {
         //rb = GetComponent<Rigidbody2D>();
@@ -51,6 +54,8 @@ public class PlayerController : MonoBehaviour {
 	
     void FixedUpdate()
     {
+        //Debug.Log("players runes " + runes);
+
         //check to see if player has touched the ground
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
         //set variable for animator to queue animation

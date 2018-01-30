@@ -24,6 +24,9 @@ public class SwordScript : MonoBehaviour {
     private float rockingMotion = 0;
     private int numberOfRotations = 0;
     //****
+    //number of runs to collect
+    public int RunesToCollect = 3;
+    private int runes = 0;
 
     private float frequency, angularFrequency, elapsedTime = 0;
     
@@ -36,10 +39,15 @@ public class SwordScript : MonoBehaviour {
     // Use this for initialization
     void Start () {
         frequency = 1 / Time.deltaTime;
+        player = GameObject.Find("Player1");
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+        runes = player.GetComponent<PlayerController>().runes;
+        //Debug.Log("runes "+runes);
+        
 
         if (startMoving && !playerHasSword)//player first encounters the sword or swordTimer is up
         {
@@ -47,12 +55,26 @@ public class SwordScript : MonoBehaviour {
             y = Mathf.Sin(x);
             elapsedTime += Time.deltaTime;
 
-            if(elapsedTime > 1.0) //2.0)
+            if(elapsedTime > 3.0)
             {
                 acceleration = 0;
                 initialVelocity = 3;
-            }
 
+                if (runes == RunesToCollect - 2)
+                {
+                    initialVelocity = 2;
+                }
+                if (runes == RunesToCollect - 1)
+                {
+                    initialVelocity = 1;
+                }
+                if (runes == RunesToCollect)
+                {
+                    initialVelocity = 0;
+                }
+            }
+            
+            Debug.Log("sword velocity " + initialVelocity);
             transform.position += new Vector3(initialVelocity + acceleration * elapsedTime, y, 0) * Time.deltaTime;
             
             //if sin(x) is near 0 then it's okay to change the amplitude of the traveling wave pattern
@@ -96,22 +118,9 @@ public class SwordScript : MonoBehaviour {
             else// if (swordTimer > 0)
             {
                 float player_Y_velocity = player.GetComponent<Rigidbody2D>().velocity.y;
-                
-                //player is falling
-                if (player_Y_velocity < -5.0)
-                {
-                    if (adjustSwordUp)
-                    {
-                        //transform.rotation = Quaternion.Euler(0, 0, 15f); 
-                        //transform.Translate(0, 0.1f, 0);
-                        adjustSwordUp = false;
-                        resetSwordDynamics = true;
-                    }
-                    
-                    
-                }
+
                 //player is jumping
-                else if (player_Y_velocity > 2.0)
+                if (player_Y_velocity > 2.0)
                 {
                     if (adjustSwordDown)
                     {
@@ -130,12 +139,6 @@ public class SwordScript : MonoBehaviour {
                             transform.Translate(0, 0.1f, 0);
                             transform.rotation = Quaternion.Euler(0, 0, 0f);
                             adjustSwordDown = true;   
-                        }
-                        else if (!adjustSwordUp)
-                        {
-                            //transform.Translate(0, -0.1f, 0);
-                            //transform.rotation = Quaternion.Euler(0, 0, 0f);
-                            adjustSwordUp = true;
                         }
                         resetSwordDynamics = false;
                     }
@@ -175,7 +178,7 @@ public class SwordScript : MonoBehaviour {
     {
         if(collision.gameObject.tag == "Player")
         {
-           //startMoving = true;
+           startMoving = true;
         }
         
     }
