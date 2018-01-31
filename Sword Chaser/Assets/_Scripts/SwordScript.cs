@@ -74,11 +74,14 @@ public class SwordScript : MonoBehaviour {
                 }
             }
             
-            Debug.Log("sword velocity " + initialVelocity);
+            //Debug.Log("sword velocity " + initialVelocity);
             transform.position += new Vector3(initialVelocity + acceleration * elapsedTime, y, 0) * Time.deltaTime;
-            
+
             //if sin(x) is near 0 then it's okay to change the amplitude of the traveling wave pattern
             //make a range of amplitudes that goes from small to large, sequential or random maybe possilbe, use an array with random index calls
+
+            //**********************RESET THE BOX COLLIDER2D
+//this.gameObject.GetComponent<BoxCollider2D>().enabled = true;
         }
 
         if(playerHasSword)
@@ -188,6 +191,9 @@ public class SwordScript : MonoBehaviour {
         {
             playerHasSword = true;
             swordSetup = true;
+            this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            this.gameObject.GetComponent<CircleCollider2D>().enabled = false;
+            //Debug.Log("boxColl2D enabled? " + this.gameObject.GetComponent<BoxCollider2D>().enabled);
         }
     }
 }

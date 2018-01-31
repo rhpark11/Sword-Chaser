@@ -5,7 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - coin_19
-  - Eneny Jumper
+  - Rune
+  - Enemy Jumper
+  - Sword
   layers:
   - Default
   - TransparentFX
@@ -24,7 +26,7 @@ TagManager:
   - 
   - Sword
   - 
-  - pickup_01
+  - pickup_coin
   - pickup_rune
   - 
   - 
