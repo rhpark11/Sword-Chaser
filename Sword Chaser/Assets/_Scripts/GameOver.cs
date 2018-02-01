@@ -40,7 +40,8 @@ public class GameOver : MonoBehaviour {
 
     public void setScore()
     {
-        scoreText.text = "Score: "+hscript.getScore().ToString();
+        float finalscore = hscript.getScore() + hscript.getTime();
+        scoreText.text = "Score: " + finalscore.ToString();
     }
 
     public void mainMenuButton()

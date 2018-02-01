@@ -104,11 +104,11 @@ public class PlayerController : MonoBehaviour {
             //slideTimer = 0f;
             anim.SetBool("Slide", true);
             sliding = true;
-            GetComponent<Rigidbody2D>().AddForce(Physics2D.gravity * 2f, ForceMode2D.Impulse);
+            GetComponent<Rigidbody2D>().AddForce(Physics2D.gravity * 1.5f, ForceMode2D.Impulse);
         }
 
-            //set variable for animator; always running
-            anim.SetFloat("Speed", start);// Mathf.Abs(move));
+        //set variable for animator; always running
+        anim.SetFloat("Speed", start);// Mathf.Abs(move));
 
         //set variable for animator; set the vertical speed to play the jump animations from the Blend Tree
         anim.SetFloat("vSpeed", GetComponent<Rigidbody2D>().velocity.y);
@@ -122,17 +122,19 @@ public class PlayerController : MonoBehaviour {
         }
 
         //sliding while holding control. When you release control, player stops sliding
-        if(!sliding && Input.GetKeyDown(KeyCode.LeftControl) && !isJumpRunning)
+        if(!sliding && Input.GetKey(KeyCode.LeftControl) && !isJumpRunning)
         {
             anim.SetBool("Slide", true);
             sliding = true;
         }
-        else if(Input.GetKeyUp(KeyCode.LeftControl))
+        if(Input.GetKeyUp(KeyCode.LeftControl))
         {
             anim.SetBool("Slide", false);
             sliding = false;
+            anim.SetBool("Ground", true);
         }
         
+        //could probably delete this block
         //if player is sliding and ceiling is above, then keep sliding
         /*
         if (!sliding && Input.GetKeyDown(KeyCode.LeftControl) && !isJumpRunning)
