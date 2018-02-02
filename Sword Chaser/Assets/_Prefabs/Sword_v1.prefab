@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 61477766437270918}
   m_Layer: 15
   m_Name: Sword_v1
-  m_TagString: Untagged
+  m_TagString: Sword
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,9 +98,10 @@ MonoBehaviour:
   period: 0
   phase: 0
   startMoving: 0
-  playerHasSword: 0
-  swordTime: 4
   player: {fileID: 0}
+  playerHasSword: 0
+  swordTime: 15
+  RunesToCollect: 3
   whatIsGround:
     serializedVersion: 2
     m_Bits: 0
