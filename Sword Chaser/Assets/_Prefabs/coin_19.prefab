@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212142320301515024}
   - component: {fileID: 95833412211683476}
   - component: {fileID: 58301703538228206}
+  - component: {fileID: 114893515984348476}
   m_Layer: 17
   m_Name: coin_19
   m_TagString: coin_19
@@ -74,6 +75,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114893515984348476
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1011213702009868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b25da5bc1717086408d725b61a425160, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  audioClipCoin: {fileID: 8300000, guid: 05770b1892718420ea79fdcdb156345b, type: 3}
+  player: {fileID: 0}
 --- !u!212 &212142320301515024
 SpriteRenderer:
   m_ObjectHideFlags: 1

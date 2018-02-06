@@ -33,9 +33,12 @@ public class EnemyFaker : MonoBehaviour {
             //Debug.Log("in if grounded");
             
             { gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce)); }
-
+            this.gameObject.GetComponent<CircleCollider2D>().enabled = false;
         }
-        
+       /* if(collision.tag == "Sword")
+        {
+            Destroy(this.gameObject, 0.1f);
+        }*/
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

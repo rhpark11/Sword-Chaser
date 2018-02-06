@@ -23,5 +23,10 @@ public class DestroyPlayerOnCollision : MonoBehaviour {
             Destroy(collision.gameObject, 0.1f);
             //call the game over script because player object has been destroyed
         }
+        if(collision.tag == "Sword")
+        {
+            //play soundeffect?
+            Destroy(this.gameObject, 0.1f);
+        }
     }
 }

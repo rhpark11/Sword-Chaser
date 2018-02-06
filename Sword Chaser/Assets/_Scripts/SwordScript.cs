@@ -177,11 +177,20 @@ public class SwordScript : MonoBehaviour {
         }
     }
     
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)//triggers don't interact with the physics system... I think?
     {
         if(collision.gameObject.tag == "Player")
         {
-           startMoving = true;
+            if (gameObject.GetComponent<CircleCollider2D>().enabled)
+            {
+                startMoving = true;
+                this.gameObject.GetComponent<CircleCollider2D>().enabled = false;
+            }
+            else
+            {
+                playerHasSword = true;
+                swordSetup = true;
+            }
         }
         
     }
@@ -189,10 +198,10 @@ public class SwordScript : MonoBehaviour {
     {
         if(collision.gameObject.tag == "Player")
         {
-            playerHasSword = true;
-            swordSetup = true;
-            this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
-            this.gameObject.GetComponent<CircleCollider2D>().enabled = false;
+            //playerHasSword = true;
+            //swordSetup = true;
+            //this.gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
+            //this.gameObject.GetComponent<CircleCollider2D>().enabled = false;
             //Debug.Log("boxColl2D enabled? " + this.gameObject.GetComponent<BoxCollider2D>().enabled);
         }
     }

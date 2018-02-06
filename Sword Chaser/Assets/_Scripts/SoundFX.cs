@@ -27,9 +27,9 @@ public class SoundFX : MonoBehaviour {
             //hud = GameObject.Find("Main Camera").GetComponent<HUDscript>();
             hud.IncreaseScore(1);
 
-            audioSource.GetComponent<AudioSource>();
-            audioSource.PlayOneShot(audioClipCoin);
-            Destroy(other.gameObject);
+            //audioSource.GetComponent<AudioSource>();
+            //audioSource.PlayOneShot(audioClipCoin);
+            //Destroy(other.gameObject);
         }
         else if (other.tag == "Rune")
         {
@@ -45,6 +45,12 @@ public class SoundFX : MonoBehaviour {
         {
             audioSource.GetComponent<AudioSource>();
             audioSource.PlayOneShot(audioClipSword);
+        }
+        if (collision.gameObject.tag == "coin_19")
+        {
+            audioSource.GetComponent<AudioSource>();
+            audioSource.PlayOneShot(audioClipCoin);
+            //Destroy(other.gameObject);
         }
     }
 }

@@ -1259,7 +1259,12 @@ Prefab:
     - target: {fileID: 114565593397668032, guid: 03aa7556c91acee448bb6f1b841cd136,
         type: 2}
       propertyPath: swordTime
-      value: 4
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 61477766437270918, guid: 03aa7556c91acee448bb6f1b841cd136,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03aa7556c91acee448bb6f1b841cd136, type: 2}
