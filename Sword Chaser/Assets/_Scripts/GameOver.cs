@@ -20,8 +20,7 @@ public class GameOver : MonoBehaviour {
         if (canvas.gameObject.activeInHierarchy == true)
             canvas.gameObject.SetActive(false);
     }
-	
-	// Update is called once per frame
+
 	void Update ()
     {
         if (pscript.getYAxis() < -5)

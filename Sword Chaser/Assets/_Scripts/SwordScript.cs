@@ -17,7 +17,7 @@ public class SwordScript : MonoBehaviour {
     public float swordTime = 5;
     
     private float swordTimer = 0;
-    private bool adjustSwordUp = true;
+    //private bool adjustSwordUp = true;
     private bool adjustSwordDown = true;
     private bool resetSwordDynamics = false;
     private bool swordSetup = false;

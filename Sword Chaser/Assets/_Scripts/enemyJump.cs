@@ -9,11 +9,11 @@ public class enemyJump : MonoBehaviour {
     public Transform groundCheck;
     float groundRadius = 0.2f;
     public LayerMask whatIsGround;
-    Rigidbody2D ej;
+    //Rigidbody2D ej; apparently not used
 
     // Use this for initialization
     void Start () {
-        ej = GetComponent<Rigidbody2D>();
+        //ej = GetComponent<Rigidbody2D>();
 	}
 	
 	// Update is called once per frame
