@@ -81,7 +81,19 @@ public class PlayerController : MonoBehaviour {
         }
 
         //non-physics
-        slide();
+        if (ceiling)
+            slide();
+        if (!sliding && Input.GetKey(KeyCode.LeftControl) && !isJumpRunning)
+        {
+            slide();
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftControl) || (!ceiling && sliding))
+        {
+            anim.SetBool("Slide", false);
+            sliding = false;
+            anim.SetBool("Ground", true);
+            GetComponent<BoxCollider2D>().enabled = true;
+        }
     }
 
     public float getYAxis()
@@ -140,16 +152,22 @@ public class PlayerController : MonoBehaviour {
     private void slide()
     {
         //sliding while holding control. When you release control, player stops sliding
-        if (!sliding && Input.GetKey(KeyCode.LeftControl) && !isJumpRunning)
-        {
-            anim.SetBool("Slide", true);
-            sliding = true;
-        }
-        if (Input.GetKeyUp(KeyCode.LeftControl))
+        GetComponent<BoxCollider2D>().enabled = false;
+        anim.SetBool("Slide", true);
+        sliding = true;/*
+        if (Input.GetKeyUp(KeyCode.LeftControl)&&!ceiling&&sliding)
         {
             anim.SetBool("Slide", false);
             sliding = false;
             anim.SetBool("Ground", true);
+            GetComponent<BoxCollider2D>().enabled = true;
         }
+        
+        else
+        {
+            GetComponent<BoxCollider2D>().enabled = true;
+            sliding = false;
+            anim.SetBool("Ground", true);
+        }*/
     }
 }
