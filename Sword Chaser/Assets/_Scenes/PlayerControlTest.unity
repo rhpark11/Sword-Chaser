@@ -358,6 +358,11 @@ Prefab:
       propertyPath: gameover
       value: 
       objectReference: {fileID: 236735026}
+    - target: {fileID: 114962241428043364, guid: b03e3e3a1637b814d8e8851904f95ff8,
+        type: 2}
+      propertyPath: jumpForce
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b03e3e3a1637b814d8e8851904f95ff8, type: 2}
   m_IsPrefabParent: 0

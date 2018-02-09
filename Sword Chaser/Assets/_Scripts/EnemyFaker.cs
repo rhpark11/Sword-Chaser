@@ -32,4 +32,15 @@ public class EnemyFaker : MonoBehaviour {
             this.gameObject.GetComponent<CircleCollider2D>().enabled = false;
         }    
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("Hello collision");
+        if (collision.gameObject.tag == "Player")
+        {
+            gameover.gameOver();
+            Destroy(collision.gameObject, 0.01f);
+        }
+        
+    }
 }
