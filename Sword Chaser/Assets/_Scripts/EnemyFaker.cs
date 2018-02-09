@@ -29,6 +29,7 @@ public class EnemyFaker : MonoBehaviour {
         if (grounded && collision.tag == "Player")
         {            
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
+            
             this.gameObject.GetComponent<CircleCollider2D>().enabled = false;
         }    
     }

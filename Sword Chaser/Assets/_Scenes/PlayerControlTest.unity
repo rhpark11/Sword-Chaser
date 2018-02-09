@@ -358,11 +358,6 @@ Prefab:
       propertyPath: gameover
       value: 
       objectReference: {fileID: 236735026}
-    - target: {fileID: 114962241428043364, guid: b03e3e3a1637b814d8e8851904f95ff8,
-        type: 2}
-      propertyPath: jumpForce
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b03e3e3a1637b814d8e8851904f95ff8, type: 2}
   m_IsPrefabParent: 0
@@ -896,6 +891,10 @@ Prefab:
     - target: {fileID: 1416182763047084, guid: 83ba6db9165ab024d97c7ec251c8206c, type: 2}
       propertyPath: m_Name
       value: enemy stationary
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416182763047084, guid: 83ba6db9165ab024d97c7ec251c8206c, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 83ba6db9165ab024d97c7ec251c8206c, type: 2}
