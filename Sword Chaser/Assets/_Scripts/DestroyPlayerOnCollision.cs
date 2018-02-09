@@ -8,7 +8,6 @@ public class DestroyPlayerOnCollision : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        //Destroy(gameObject, 3f); destroy after a delay
 	}
 	
 	// Update is called once per frame
@@ -21,12 +20,6 @@ public class DestroyPlayerOnCollision : MonoBehaviour {
         {
             gameover.gameOver();
             Destroy(collision.gameObject, 0.1f);
-            //call the game over script because player object has been destroyed
-        }
-        if(collision.tag == "Sword")
-        {
-            //play soundeffect?
-            Destroy(this.gameObject, 0.1f);
         }
     }
 }

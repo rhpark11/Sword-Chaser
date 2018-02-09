@@ -9,11 +9,9 @@ public class enemyJump : MonoBehaviour {
     public Transform groundCheck;
     float groundRadius = 0.2f;
     public LayerMask whatIsGround;
-    //Rigidbody2D ej; apparently not used
 
     // Use this for initialization
     void Start () {
-        //ej = GetComponent<Rigidbody2D>();
 	}
 	
 	// Update is called once per frame
@@ -25,6 +23,5 @@ public class enemyJump : MonoBehaviour {
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));//make the enemy go up and then drop back down
         }
-        
     }
 }

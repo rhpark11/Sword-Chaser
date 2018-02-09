@@ -8,6 +8,8 @@ TagManager:
   - Rune
   - Enemy Jumper
   - Sword
+  - Enemy Faker
+  - Enemy Stationary
   layers:
   - Default
   - TransparentFX

@@ -23,33 +23,13 @@ public class EnemyFaker : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
-    {
-        //Debug.Log(triggerCounter);
-        
+    {   
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
         
         if (grounded && collision.tag == "Player")
-        {
-            //Debug.Log("in if grounded");
-            
-            { gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce)); }
+        {            
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
             this.gameObject.GetComponent<CircleCollider2D>().enabled = false;
-        }
-       /* if(collision.tag == "Sword")
-        {
-            Destroy(this.gameObject, 0.1f);
-        }*/
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        Debug.Log("in OnCollisionEnter2D");
-
-        if (collision.gameObject.tag == "Player")
-        {
-            //Debug.Log("in if tag == Player");
-            Destroy(collision.gameObject, 0.1f);
-            gameover.gameOver();
-        }
+        }    
     }
 }
