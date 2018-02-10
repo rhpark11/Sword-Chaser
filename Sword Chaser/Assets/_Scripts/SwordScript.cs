@@ -89,7 +89,7 @@ public class SwordScript : MonoBehaviour {
                 this.gameObject.transform.SetParent(player.transform);
                 transform.position = new Vector3(player.transform.position.x , player.transform.position.y, 0);
                 transform.Translate(0.9f, -0.1f, 0);
-                transform.RotateAround(player.transform.position, new Vector3(0, 0, 1), 1.2f);
+                //transform.RotateAround(player.transform.position, new Vector3(0, 0, 1), 1.2f);
 
                 swordTimer = swordTime;  //set the swordTimer to public variable Xseconds
                 swordSetup = false;  //sword no longer needs to be setup
@@ -112,10 +112,10 @@ public class SwordScript : MonoBehaviour {
                 acceleration = 3;
 
                 //reset the rotation
-                this.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
+                //this.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
 
                 //reset the circle collider
-                this.gameObject.GetComponent<CircleCollider2D>().enabled = true;
+                //this.gameObject.GetComponent<CircleCollider2D>().enabled = true;
                 this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
             }
         }
@@ -125,7 +125,7 @@ public class SwordScript : MonoBehaviour {
     {
         if(collision.gameObject.tag == "Player")
         {
-            if (this.gameObject.GetComponent<CircleCollider2D>().enabled)
+            if (!startMoving)// && this.gameObject.GetComponent<CircleCollider2D>().enabled)
             {
                 this.gameObject.GetComponent<CircleCollider2D>().enabled = false;
                 this.gameObject.GetComponent<BoxCollider2D>().enabled = true;

@@ -16,6 +16,7 @@ public class EnemyFaker : MonoBehaviour {
     // Use this for initialization
     void Start () {
         grounded = true;
+        //gameover = GameObject.Find("GameOverController"); //this doesn't work
 	}
 	
 	// Update is called once per frame
@@ -38,7 +39,6 @@ public class EnemyFaker : MonoBehaviour {
         }
         if (collider.tag == "Sword" && collider.GetComponent<SwordScript>().playerHasSword)
         {
-            Debug.Log("in Ontriggered by sword");
             jump = true;
             this.gameObject.GetComponent<CircleCollider2D>().enabled = false;
         }
