@@ -25,7 +25,7 @@ public class CoinScript : MonoBehaviour {
         {
             audioSource.GetComponent<AudioSource>();
             audioSource.PlayOneShot(audioClipCoin);
-            Debug.Log("coin is triggered");
+            
             this.gameObject.GetComponent<CircleCollider2D>().enabled = false;
 
             Destroy(this.gameObject, 0.01f);

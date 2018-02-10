@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class EnemyFaker : MonoBehaviour {
 
-    public float jumpForce = 200f;
+    public float jumpForce = 200.0f;
     bool grounded = false;
     public Transform groundCheck;
     float groundRadius = 0.2f;
     public LayerMask whatIsGround;
 
     public GameOver gameover;
+    private bool jump;
 
     // Use this for initialization
     void Start () {
@@ -18,30 +19,37 @@ public class EnemyFaker : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-        
+	void FixedUpdate () {
+        if(jump)
+        {
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
+            jump = false;
+        }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collider)
     {   
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
         
-        if (grounded && collision.tag == "Player")
-        {            
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
-            
+        if (grounded && collider.tag == "Player")
+        {
+            jump = true;
             this.gameObject.GetComponent<CircleCollider2D>().enabled = false;
-        }    
+        }
+        if (collider.tag == "Sword" && collider.GetComponent<SwordScript>().playerHasSword)
+        {
+            Debug.Log("in Ontriggered by sword");
+            jump = true;
+            this.gameObject.GetComponent<CircleCollider2D>().enabled = false;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Hello collision");
         if (collision.gameObject.tag == "Player")
         {
             gameover.gameOver();
             Destroy(collision.gameObject, 0.01f);
-        }
-        
+        }   
     }
 }

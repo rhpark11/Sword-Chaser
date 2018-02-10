@@ -137,7 +137,7 @@ public class SwordScript : MonoBehaviour {
                 swordSetup = true;
             }
         }
-        else if(collision.gameObject.tag == "Enemy Faker" && playerHasSword)
+        else if(collision.gameObject.tag == "Enemy Faker" && playerHasSword && !collision.GetComponent<CircleCollider2D>().enabled)
         {
             Destroy(collision.gameObject, 0.01f);
         }

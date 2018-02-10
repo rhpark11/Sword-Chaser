@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4336836758240984}
   - component: {fileID: 212967111176099586}
-  - component: {fileID: 70006457964546650}
   - component: {fileID: 70796981309781424}
   - component: {fileID: 50949271984662138}
   - component: {fileID: 58323254469082942}
@@ -55,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1456563667915604}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.76, y: -1.9427888, z: 0.13476562}
+  m_LocalPosition: {x: 12.464, y: -1.9427888, z: 0.13476562}
   m_LocalScale: {x: 1.0441017, y: 1.529221, z: 1.0441017}
   m_Children:
   - {fileID: 4480934373235816}
@@ -110,21 +109,6 @@ CircleCollider2D:
   m_Offset: {x: 0.009359529, y: 0.30825013}
   serializedVersion: 2
   m_Radius: 1.2782359
---- !u!70 &70006457964546650
-CapsuleCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1456563667915604}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.012256581, y: 0}
-  m_Size: {x: 0.8529197, y: 1}
-  m_Direction: 0
 --- !u!70 &70796981309781424
 CapsuleCollider2D:
   m_ObjectHideFlags: 1
@@ -134,7 +118,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -164,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79687c9497375d0468653cc1b8a21183, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 200
+  jumpForce: 300
   groundCheck: {fileID: 4480934373235816}
   whatIsGround:
     serializedVersion: 2
