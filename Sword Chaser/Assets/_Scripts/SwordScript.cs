@@ -17,13 +17,8 @@ public class SwordScript : MonoBehaviour {
     public float swordTime = 5;
     
     private float swordTimer = 0;
-    //private bool adjustSwordUp = true;
-    private bool adjustSwordDown = true;
-    private bool resetSwordDynamics = false;
     private bool swordSetup = false;
-    private float rockingMotion = 0;
-    private int numberOfRotations = 0;
-    //****
+    
     //number of runs to collect
     public int RunesToCollect = 3;
     private int runes = 0;
@@ -40,7 +35,6 @@ public class SwordScript : MonoBehaviour {
     void Start () {
         frequency = 1 / Time.deltaTime;
         player = GameObject.Find("Player1");
-        this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
 	}
 	
 	// Update is called once per frame
@@ -54,10 +48,10 @@ public class SwordScript : MonoBehaviour {
             y = Mathf.Sin(x);
             elapsedTime += Time.deltaTime;
 
-            if(elapsedTime > 3.0)
+            if(elapsedTime > 1.0)
             {
                 acceleration = 0;
-                initialVelocity = 3;
+                initialVelocity = player.GetComponent<Rigidbody2D>().velocity.x;
 
                 if (runes == RunesToCollect - 2)
                 {
@@ -73,11 +67,7 @@ public class SwordScript : MonoBehaviour {
                 }
             }
             
-            //Debug.Log("sword velocity " + initialVelocity);
             transform.position += new Vector3(initialVelocity + acceleration * elapsedTime, y, 0) * Time.deltaTime;
-
-            //if sin(x) is near 0 then it's okay to change the amplitude of the traveling wave pattern
-            //make a range of amplitudes that goes from small to large, sequential or random maybe possilbe, use an array with random index calls
             
         }
 
@@ -89,7 +79,6 @@ public class SwordScript : MonoBehaviour {
                 this.gameObject.transform.SetParent(player.transform);
                 transform.position = new Vector3(player.transform.position.x , player.transform.position.y, 0);
                 transform.Translate(0.9f, -0.1f, 0);
-                //transform.RotateAround(player.transform.position, new Vector3(0, 0, 1), 1.2f);
 
                 swordTimer = swordTime;  //set the swordTimer to public variable Xseconds
                 swordSetup = false;  //sword no longer needs to be setup
@@ -110,13 +99,7 @@ public class SwordScript : MonoBehaviour {
                 elapsedTime = 0;
                 initialVelocity = 8;
                 acceleration = 3;
-
-                //reset the rotation
-                //this.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
-
-                //reset the circle collider
-                //this.gameObject.GetComponent<CircleCollider2D>().enabled = true;
-                this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+                
             }
         }
     }
@@ -125,10 +108,9 @@ public class SwordScript : MonoBehaviour {
     {
         if(collision.gameObject.tag == "Player")
         {
-            if (!startMoving)// && this.gameObject.GetComponent<CircleCollider2D>().enabled)
+            if (!startMoving && this.gameObject.GetComponent<CircleCollider2D>().enabled)
             {
                 this.gameObject.GetComponent<CircleCollider2D>().enabled = false;
-                this.gameObject.GetComponent<BoxCollider2D>().enabled = true;
                 startMoving = true;
             }
             else

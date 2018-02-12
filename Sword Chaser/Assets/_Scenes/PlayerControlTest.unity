@@ -1337,6 +1337,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 17
       objectReference: {fileID: 0}
+    - target: {fileID: 4704972790017026, guid: f7bec85ed744fc6479308f3ed019e298, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4704972790017026, guid: f7bec85ed744fc6479308f3ed019e298, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f7bec85ed744fc6479308f3ed019e298, type: 2}
   m_IsPrefabParent: 0
@@ -1557,7 +1565,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4643631251215562, guid: 5a4ab3eab0901d14fb4557f1c051b58a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.993
+      value: -4.03
       objectReference: {fileID: 0}
     - target: {fileID: 4643631251215562, guid: 5a4ab3eab0901d14fb4557f1c051b58a, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1595,17 +1603,22 @@ Prefab:
     - target: {fileID: 58259577649752114, guid: 5a4ab3eab0901d14fb4557f1c051b58a,
         type: 2}
       propertyPath: m_Offset.x
-      value: 1.0758328
+      value: 1.7077875
       objectReference: {fileID: 0}
     - target: {fileID: 58259577649752114, guid: 5a4ab3eab0901d14fb4557f1c051b58a,
         type: 2}
       propertyPath: m_Radius
-      value: 28.397324
+      value: 70.1065
       objectReference: {fileID: 0}
     - target: {fileID: 114651550157707564, guid: 5a4ab3eab0901d14fb4557f1c051b58a,
         type: 2}
       propertyPath: swordTime
-      value: 5
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 58259577649752114, guid: 5a4ab3eab0901d14fb4557f1c051b58a,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 5.68758
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5a4ab3eab0901d14fb4557f1c051b58a, type: 2}
