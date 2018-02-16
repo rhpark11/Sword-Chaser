@@ -10,6 +10,7 @@ TagManager:
   - Sword
   - Enemy Faker
   - Enemy Stationary
+  - Background
   layers:
   - Default
   - TransparentFX
@@ -31,7 +32,7 @@ TagManager:
   - pickup_coin
   - pickup_rune
   - 
-  - 
+  - Background layer
   - 
   - 
   - 

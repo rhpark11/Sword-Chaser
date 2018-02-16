@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
+    public HUDscript hud;
+
     Animator anim;
     bool isJumpRunning;
     float maxJumpTime;
     float jumpTime;
-
-    bool startGame = false; //start the motion of the player
-    float start = 0;//don't start running until player moves the character
+    int move;
+    public bool startGame = false; //start the motion of the player
+    //float start = 0;//don't start running until player moves the character
 
     /* use these to check if grounded to run jump or fall states
     */
@@ -48,6 +50,7 @@ public class PlayerController : MonoBehaviour {
         isJumpRunning = false;
         maxJumpTime = 0.25f;
         jumpTime = 0.0f;
+        move = 0;
     }
 	
     void FixedUpdate()
@@ -56,10 +59,10 @@ public class PlayerController : MonoBehaviour {
 
         groundCeilingCheck();
 
-        float move = Input.GetAxis("Horizontal");
-        if (move != 0) {
+        //float move = Input.GetAxis("Horizontal");
+        if (move == 0 && Input.anyKey) {
+            move = 1;
             startGame = true;
-            start = 1;
             anim.SetBool("StartGame", true);  //start the run animation on key press, needed to smooth beginning fall in test scene
         }
 
@@ -67,7 +70,7 @@ public class PlayerController : MonoBehaviour {
         slideFromJump();
 
         //set variable for animator; always running
-        anim.SetFloat("Speed", start);// Mathf.Abs(move));
+        anim.SetFloat("Speed", 1);// Mathf.Abs(move));
 
         //set variable for animator; set the vertical speed to play the jump animations from the Blend Tree
         anim.SetFloat("vSpeed", GetComponent<Rigidbody2D>().velocity.y);
@@ -154,20 +157,6 @@ public class PlayerController : MonoBehaviour {
         //sliding while holding control. When you release control, player stops sliding
         GetComponent<BoxCollider2D>().enabled = false;
         anim.SetBool("Slide", true);
-        sliding = true;/*
-        if (Input.GetKeyUp(KeyCode.LeftControl)&&!ceiling&&sliding)
-        {
-            anim.SetBool("Slide", false);
-            sliding = false;
-            anim.SetBool("Ground", true);
-            GetComponent<BoxCollider2D>().enabled = true;
-        }
-        
-        else
-        {
-            GetComponent<BoxCollider2D>().enabled = true;
-            sliding = false;
-            anim.SetBool("Ground", true);
-        }*/
+        sliding = true;
     }
 }

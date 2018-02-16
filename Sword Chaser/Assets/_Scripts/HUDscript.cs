@@ -4,20 +4,34 @@ using UnityEngine;
 
 public class HUDscript : MonoBehaviour {
 
+    public PlayerController player;
+
     float time = 0f;
     float seconds = 0f;
     float score = 0f;
 
+    bool start;
+
+    private void Start()
+    {
+        start = false;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        time += Time.deltaTime * 100;
-        if (time >= 100)
+        if (player.startGame == true)
         {
-            seconds += 1f;
-            time = 0f;
+            time += Time.deltaTime * 100;
+            if (time >= 100)
+            {
+                seconds += 1f;
+                time = 0f;
+            }
         }
     }
+
+
     public void IncreaseScore(int amount)
     {
         score += amount;
