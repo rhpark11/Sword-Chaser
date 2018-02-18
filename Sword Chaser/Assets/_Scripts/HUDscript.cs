@@ -10,11 +10,8 @@ public class HUDscript : MonoBehaviour {
     float seconds = 0f;
     float score = 0f;
 
-    bool start;
-
     private void Start()
     {
-        start = false;
     }
 
     // Update is called once per frame
