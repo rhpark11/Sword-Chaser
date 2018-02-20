@@ -6,12 +6,16 @@ public class SwordCutsceneScript : MonoBehaviour {
 
     public PlayerController player;
 
+    CircleCollider2D c_collider;
     Vector3 target;
     int speed = 3;
 
 	// Use this for initialization
 	void Start () {
+        c_collider = GetComponent<CircleCollider2D>();
+        c_collider.enabled = false;
 		target = new Vector3(-3f, -0.5f, 0f);
+
     }
 	
 	// Update is called once per frame
@@ -25,6 +29,7 @@ public class SwordCutsceneScript : MonoBehaviour {
         {
             player.startGame = true;
             transform.position = target;
+            c_collider.enabled = true;
         }
 
     }
