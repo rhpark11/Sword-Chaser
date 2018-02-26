@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
+    public HUDscript hud;
     public GameObject sword;
 
     Animator anim;
@@ -81,15 +82,12 @@ public class PlayerController : MonoBehaviour {
     void Update() {
         //set velocity of player to the right
         if (startGame) {
-            //uhh just ignore the red line.
-            sword.GetComponent<SwordCutsceneScript>().enabled = false;
-            GetComponent<Rigidbody2D>().velocity = new Vector2(4, GetComponent<Rigidbody2D>().velocity.y);
-            /*if(move == 1)
+            if(move == 1)
             {
                 //uhh just ignore the red line.
                 sword.GetComponent<SwordCutsceneScript>().enabled = false;
                 GetComponent<Rigidbody2D>().velocity = new Vector2(4, GetComponent<Rigidbody2D>().velocity.y);
-            }*/
+            }
 
             //non-physics
             if (ceiling)

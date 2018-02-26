@@ -23,7 +23,7 @@ public class SoundFX : MonoBehaviour {
         if (other.tag == "coin_19")
         {
             GameObject go = GameObject.Find("Main Camera");
-            //HUDscript hud = (HUDscript)go.GetComponent(typeof(HUDscript));
+            HUDscript hud = (HUDscript)go.GetComponent(typeof(HUDscript));
             //hud = GameObject.Find("Main Camera").GetComponent<HUDscript>();
             hud.IncreaseScore(1);
 
