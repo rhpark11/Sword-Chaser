@@ -66,8 +66,17 @@ public class SwordScript : MonoBehaviour {
                     initialVelocity = 0;
                 }
             }
-            
-            transform.position += new Vector3(initialVelocity + acceleration * elapsedTime, y, 0) * Time.deltaTime;
+            //so the sword doesnt fall behind the player
+            //we can do this or change it so that if it does, the sword goes all the way back
+            //to the front.
+            if(transform.position.x <= player.transform.position.x)
+            {
+                transform.position += new Vector3(player.GetComponent<Rigidbody2D>().velocity.x, y, 0) * Time.deltaTime;
+            }
+            else
+            {
+                transform.position += new Vector3(initialVelocity + acceleration * elapsedTime, y, 0) * Time.deltaTime;
+            }
             
         }
 
@@ -99,11 +108,14 @@ public class SwordScript : MonoBehaviour {
                 elapsedTime = 0;
                 initialVelocity = 8;
                 acceleration = 3;
-                
+
+                player.GetComponent<PlayerController>().setRunesToZero(); //reset runes to make the sword fast again
+                acceleration = 3.0f;
+                initialVelocity = 8.0f;
             }
         }
     }
-    
+
     private void OnTriggerEnter2D(Collider2D collision)//triggers don't interact with the physics system
     {
         if(collision.gameObject.tag == "Player")

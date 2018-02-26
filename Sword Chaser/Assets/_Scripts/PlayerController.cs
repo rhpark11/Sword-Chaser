@@ -112,6 +112,10 @@ public class PlayerController : MonoBehaviour {
     {
         return transform.position.y;
     }
+    public void setRunesToZero()
+    {
+        runes = 0;
+    }
 
     private void groundCeilingCheck()
     {
