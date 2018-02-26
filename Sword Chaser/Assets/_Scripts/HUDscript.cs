@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HUDscript : MonoBehaviour {
 
     public PlayerController player;
+    public Text ScoreText;
+    public Text TimeText;
 
     float time = 0f;
     float seconds = 0f;
@@ -25,7 +28,10 @@ public class HUDscript : MonoBehaviour {
                 seconds += 1f;
                 time = 0f;
             }
+            ScoreText.text = "Score: " + score.ToString();
+            TimeText.text = "Time: " + seconds.ToString();
         }
+
     }
 
 
@@ -34,11 +40,6 @@ public class HUDscript : MonoBehaviour {
         score += amount;
     }
 
-    private void OnGUI()
-    {
-        GUI.Label(new Rect(10, 10, 100, 30), "Time: " + seconds);
-        GUI.Label(new Rect(10, 40, 100, 30), "Score: " + score);
-    }
 
     public float getScore()
     {
