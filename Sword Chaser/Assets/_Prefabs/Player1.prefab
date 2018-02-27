@@ -126,8 +126,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1371741191465748}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.08, y: -2.380881, z: 0.21136929}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -9.08, y: -1.52, z: 0.21136929}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4573526097643650}
@@ -396,6 +396,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 4294526431
+  gOverScript: {fileID: 0}
   ceilingCheck: {fileID: 4448217027738010}
   whatIsCeiling:
     serializedVersion: 2
