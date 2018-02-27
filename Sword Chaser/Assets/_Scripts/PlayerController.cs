@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour {
     float groundRadius = 0.2f;
     public LayerMask whatIsGround;
 
+    public GameOver gOver;
+
     /* need something here to check for ceilings
     */
     bool ceiling = false;
@@ -104,6 +106,11 @@ public class PlayerController : MonoBehaviour {
                 sliding = false;
                 anim.SetBool("Ground", true);
                 GetComponent<BoxCollider2D>().enabled = true;
+            }
+            if(transform.position.y<-5)
+            {
+                gOver.gameOver();
+                this.enabled = false;
             }
         }
     }
