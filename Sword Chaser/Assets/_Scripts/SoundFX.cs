@@ -12,10 +12,13 @@ public class SoundFX : MonoBehaviour {
 
     public AudioClip audioClipLevel_01;
 
+    private GameObject sword;
+
     private void Start()
     {
         audioSource.GetComponent<AudioSource>();
         audioSource.PlayOneShot(audioClipLevel_01);
+        sword = GameObject.Find("Sword");
     }
 
     void OnTriggerEnter2D(Collider2D other) {
@@ -41,7 +44,7 @@ public class SoundFX : MonoBehaviour {
     /*
     private void OnCollisionEnter2D(Collision2D collision)
     {
-    */  else if(other.tag == "Sword")
+    */  else if(other.tag == "Sword" && !sword.GetComponent<SwordScript>().playerHasSword)
         {
             audioSource.GetComponent<AudioSource>();
             audioSource.PlayOneShot(audioClipSword);

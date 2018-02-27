@@ -79,7 +79,7 @@ public class SwordScript : MonoBehaviour {
             }
             
         }
-
+        
         if(playerHasSword)
         {
             
