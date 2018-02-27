@@ -11,18 +11,23 @@ public class SwordCutsceneScript : MonoBehaviour {
     Vector3 target;
     int speed = 3;
 
+    //sword time y axis
+    private float elapsedTime = 0.0f;
+
 	// Use this for initialization
 	void Start () {
         timerScript = this.gameObject.transform.GetChild(0).gameObject.GetComponent<CountDownTimer>();
         c_collider = GetComponent<CircleCollider2D>();
         c_collider.enabled = false;
-		target = new Vector3(-1f, -0.5f, 0f);
+		target = new Vector3(-5f, -0.5f, 0f);
 
     }
 	
 	// Update is called once per frame
 	void Update () {
-        if (transform.position.x != -1f && transform.position.y != -0.5f)
+        elapsedTime += Time.deltaTime;
+
+        if (transform.position.x != -5f && transform.position.y != -0.5f)
         {
             float step = speed * Time.deltaTime;
             transform.position = Vector3.MoveTowards(transform.position, target, step);
@@ -37,6 +42,7 @@ public class SwordCutsceneScript : MonoBehaviour {
         else if(transform.GetChild(0).transform.gameObject.activeInHierarchy == false && timerScript.start == false)
         {
             transform.GetChild(0).transform.gameObject.SetActive(true);
+            //transform.position = new Vector3(0, Mathf.Sin(elapsedTime),0); //elaspedTime += Time.delta;
         }
 
     }

@@ -37,20 +37,23 @@ public class SoundFX : MonoBehaviour {
             audioSource.PlayOneShot(audioClipRune);
         }
         
-    }
-
+   /* }
+    /*
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.collider.tag == "Sword")
+    */  else if(other.tag == "Sword")
         {
             audioSource.GetComponent<AudioSource>();
             audioSource.PlayOneShot(audioClipSword);
         }
-        if (collision.gameObject.tag == "coin_19")
+        /*
+        if (other.tag == "coin_19")
         {
             audioSource.GetComponent<AudioSource>();
             audioSource.PlayOneShot(audioClipCoin);
             //Destroy(other.gameObject);
         }
+
+        */
     }
 }
