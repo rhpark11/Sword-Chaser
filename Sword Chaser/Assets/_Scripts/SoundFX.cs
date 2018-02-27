@@ -23,6 +23,7 @@ public class SoundFX : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other) {
 
+        bool hasSword = sword.GetComponent<SwordScript>().playerHasSword;
         if (other.tag == "coin_19")
         {
             GameObject go = GameObject.Find("Main Camera");
@@ -39,24 +40,15 @@ public class SoundFX : MonoBehaviour {
             audioSource.GetComponent<AudioSource>();
             audioSource.PlayOneShot(audioClipRune);
         }
-        
-   /* }
-    /*
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-    */  else if(other.tag == "Sword" && !sword.GetComponent<SwordScript>().playerHasSword)
+        //else if (/*other.tag == "Sword" &&*/ sword.GetComponent<SwordScript>().playerHasSword)
+        //else if(other.transform.IsChildOf(this.gameObject.transform))
+        else if(hasSword)
         {
             audioSource.GetComponent<AudioSource>();
             audioSource.PlayOneShot(audioClipSword);
         }
-        /*
-        if (other.tag == "coin_19")
-        {
-            audioSource.GetComponent<AudioSource>();
-            audioSource.PlayOneShot(audioClipCoin);
-            //Destroy(other.gameObject);
-        }
-
-        */
+        //Debug.Log("player has sword " + sword.GetComponent<SwordScript>().playerHasSword);
+        Debug.Log("player has sword " + hasSword);
+        Debug.Log(other.tag);
     }
 }

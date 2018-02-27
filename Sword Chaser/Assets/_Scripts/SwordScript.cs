@@ -23,7 +23,7 @@ public class SwordScript : MonoBehaviour {
     public int RunesToCollect = 3;
     private int runes = 0;
 
-    private float frequency, angularFrequency, elapsedTime = 0;
+    private float elapsedTime = 0;
     
     private float x, y = 0;
     private float acceleration = 3.0f;
@@ -33,7 +33,7 @@ public class SwordScript : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        frequency = 1 / Time.deltaTime;
+        //frequency = 1 / Time.deltaTime;
         player = GameObject.Find("Player1");
 	}
 	
