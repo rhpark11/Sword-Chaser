@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class GameOver : MonoBehaviour {
 
     public Transform canvas;
-    //public PlayerController pscript;
+    public PlayerController pscript;
     public HUDscript hscript;
     public Text scoreText;
 
@@ -23,21 +23,18 @@ public class GameOver : MonoBehaviour {
 
 	void Update ()
     {
-        /*
         if (pscript.getYAxis() < -5)
         {
             gameOver();
-        }*/
+        }
     }
 
     public void gameOver()
     {
-        //isGameOver = true;
+        isGameOver = true;
         canvas.gameObject.SetActive(true);
         setScore();
-        isGameOver = true;
         Time.timeScale = 0;
-        //this.enabled = false;
     }
 
     public void setScore()
