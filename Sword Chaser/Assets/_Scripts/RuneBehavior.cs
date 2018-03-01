@@ -6,7 +6,9 @@ public class RuneBehavior : MonoBehaviour {
 
 
     private bool PlusOneRune = true;
-	
+
+    private float elapsedTime = 0.0f;
+
     // Use this for initialization
 	void Start () {
 		
@@ -14,19 +16,10 @@ public class RuneBehavior : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        elapsedTime += Time.deltaTime;
+        transform.position = new Vector3(transform.position.x, Mathf.Sin(elapsedTime) * 0.6f, 0);
 	}
-    /*
-    public void OnCollisionEnter2D(Collision2D collision)
-    {
-        //Debug.Log("in Rune collider");
-        if (collision.gameObject.tag == "Player")
-        {
-            //Debug.Log("in Player tag");
-            collision.gameObject.GetComponent<PlayerController>().runes++;
-            Destroy(this.gameObject);
-        }
-    }*/
+    
     public void OnTriggerEnter2D(Collider2D collision)
     {
         //Debug.Log("in Rune collider");

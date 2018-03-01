@@ -5,17 +5,18 @@ using UnityEngine;
 public class SpawnScript : MonoBehaviour {
 
     public GameObject[] obj;
-    public float spawnMin = 2f;
-    public float spawnMax = 3f;
+    public float spawnMin = 5f;
+    public float spawnMax = 6f;
+
 	// Use this for initialization
 	void Start () {
-        Spawn();
-	}
 
-    // Update is called once per frame
+        InvokeRepeating("Spawn", 6,Random.Range(spawnMin, spawnMax));
+    }
+    
     void Spawn ()
     {
-        Instantiate(obj[Random.Range(0, obj.GetLength(0))], transform.position, Quaternion.identity);
-        Invoke ("Spawn", Random.Range (spawnMin, spawnMax));
+        Instantiate(obj[Random.Range(0, obj.GetLength(0))], this.gameObject.transform.position, Quaternion.identity);
+        
 	}
 }

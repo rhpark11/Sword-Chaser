@@ -22,7 +22,6 @@ public class SoundFX : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D other) {
-
         bool hasSword = sword.GetComponent<SwordScript>().playerHasSword;
         if (other.tag == "coin_19")
         {
@@ -48,7 +47,7 @@ public class SoundFX : MonoBehaviour {
             audioSource.PlayOneShot(audioClipSword);
         }
         //Debug.Log("player has sword " + sword.GetComponent<SwordScript>().playerHasSword);
-        Debug.Log("player has sword " + hasSword);
-        Debug.Log(other.tag);
+        //Debug.Log("player has sword " + hasSword);
+        //Debug.Log(other.tag);
     }
 }
