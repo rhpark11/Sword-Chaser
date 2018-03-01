@@ -30,6 +30,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1362276716758818
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4645575904319382}
+  - component: {fileID: 114469965422764114}
+  m_Layer: 0
+  m_Name: runeSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1589936480629116
 GameObject:
   m_ObjectHideFlags: 0
@@ -60,7 +76,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1635420787786148
 GameObject:
   m_ObjectHideFlags: 1
@@ -71,7 +87,7 @@ GameObject:
   - component: {fileID: 224794577784087392}
   - component: {fileID: 222405897988416698}
   - component: {fileID: 114501142189855840}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +104,7 @@ GameObject:
   - component: {fileID: 224936397240570632}
   - component: {fileID: 222450648306320862}
   - component: {fileID: 114896950149180398}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Time
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +123,7 @@ GameObject:
   - component: {fileID: 114920297446024346}
   - component: {fileID: 114508468484023202}
   - component: {fileID: 114256535285368972}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: TimeAndScore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,6 +139,22 @@ GameObject:
   m_Component:
   - component: {fileID: 4477509214019854}
   - component: {fileID: 114230500190889578}
+  m_Layer: 0
+  m_Name: platformSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1799455593837572
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4404950413621648}
+  - component: {fileID: 114870252175686932}
   m_Layer: 0
   m_Name: coinSpawn
   m_TagString: Untagged
@@ -141,7 +173,20 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4655609774823560}
-  m_RootOrder: 2
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4404950413621648
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1799455593837572}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 10.23, y: -2.01, z: 10.660156}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4655609774823560}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4477509214019854
 Transform:
@@ -150,11 +195,24 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1795140975592378}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.23, y: -2.01, z: 10.660156}
+  m_LocalPosition: {x: 22.55, y: -3.66, z: 10.660156}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4655609774823560}
-  m_RootOrder: 1
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4645575904319382
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1362276716758818}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 13.75, y: -1.01, z: 10.660156}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4655609774823560}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4655609774823560
 Transform:
@@ -167,9 +225,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224885685342660798}
-  - {fileID: 4477509214019854}
   - {fileID: 4229966830856716}
   - {fileID: 4953811701688590}
+  - {fileID: 4404950413621648}
+  - {fileID: 4645575904319382}
+  - {fileID: 4477509214019854}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -180,11 +240,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1621684605379248}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.11, y: 0, z: 0}
+  m_LocalPosition: {x: 27.11, y: -1.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4655609774823560}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &20624741448298614
 Camera:
@@ -253,9 +313,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obj:
-  - {fileID: 1011213702009868, guid: 734f6914a633e2d45ac9a2aa9730642e, type: 2}
-  spawnMin: 4
-  spawnMax: 5
+  - {fileID: 100004, guid: d024aaa09f4080d448d16f62d1a97b0b, type: 2}
+  spawnMin: 13
+  spawnMax: 13
 --- !u!114 &114256535285368972
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -270,6 +330,21 @@ MonoBehaviour:
   player: {fileID: 0}
   ScoreText: {fileID: 114501142189855840}
   TimeText: {fileID: 114896950149180398}
+--- !u!114 &114469965422764114
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1362276716758818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6df7478942b1c7d49b72744f1d4cb26b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj:
+  - {fileID: 1855314149073448, guid: f7bec85ed744fc6479308f3ed019e298, type: 2}
+  spawnMin: 5
+  spawnMax: 6
 --- !u!114 &114501142189855840
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -331,9 +406,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obj:
-  - {fileID: 1456563667915604, guid: b03e3e3a1637b814d8e8851904f95ff8, type: 2}
+  - {fileID: 1416182763047084, guid: 83ba6db9165ab024d97c7ec251c8206c, type: 2}
   spawnMin: 2
-  spawnMax: 3
+  spawnMax: 5
+--- !u!114 &114870252175686932
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1799455593837572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6df7478942b1c7d49b72744f1d4cb26b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj:
+  - {fileID: 1011213702009868, guid: 734f6914a633e2d45ac9a2aa9730642e, type: 2}
+  spawnMin: 4
+  spawnMax: 5
 --- !u!114 &114896950149180398
 MonoBehaviour:
   m_ObjectHideFlags: 1

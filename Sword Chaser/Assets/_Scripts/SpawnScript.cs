@@ -5,13 +5,13 @@ using UnityEngine;
 public class SpawnScript : MonoBehaviour {
 
     public GameObject[] obj;
-    public float spawnMin = 5f;
-    public float spawnMax = 6f;
+    public float spawnMin = 10f;
+    public float spawnMax = 10f;
 
 	// Use this for initialization
 	void Start () {
 
-        InvokeRepeating("Spawn", 6,Random.Range(spawnMin, spawnMax));
+        InvokeRepeating("Spawn", 8,Random.Range(spawnMin, spawnMax));
     }
     
     void Spawn ()

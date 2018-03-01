@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 70923247912476770}
   - component: {fileID: 114693946074517662}
   - component: {fileID: 70058607442240738}
-  - component: {fileID: 114936985179534994}
   - component: {fileID: 50897734019072676}
   m_Layer: 12
   m_Name: EnemyStationary
@@ -107,19 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameover: {fileID: 0}
---- !u!114 &114936985179534994
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1416182763047084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e557b92b9b8f154aa97f661168bbe10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  platDestruction: {fileID: 1416182763047084}
-  destructorName: Destroyer
+  game: {fileID: 0}
 --- !u!212 &212542129237427022
 SpriteRenderer:
   m_ObjectHideFlags: 1
