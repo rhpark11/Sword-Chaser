@@ -24,6 +24,8 @@ public class SwordScript : MonoBehaviour {
     private int runes = 0;
 
     private float elapsedTime = 0;
+
+    public ParticleSystem ps;
     
     private float x, y = 0;
     private float acceleration = 3.0f;
@@ -35,6 +37,7 @@ public class SwordScript : MonoBehaviour {
     void Start () {
         //frequency = 1 / Time.deltaTime;
         player = GameObject.Find("Player1");
+        //ps = GetComponent<ParticleSystem>();
 	}
 	
 	// Update is called once per frame
@@ -112,6 +115,9 @@ public class SwordScript : MonoBehaviour {
                 player.GetComponent<PlayerController>().setRunesToZero(); //reset runes to make the sword fast again
                 acceleration = 3.0f;
                 initialVelocity = 8.0f;
+
+                ps.Play();
+                ps.enableEmission = true;
             }
         }
     }
@@ -129,6 +135,8 @@ public class SwordScript : MonoBehaviour {
             {
                 playerHasSword = true;
                 swordSetup = true;
+                ps.enableEmission = false;
+                ps.Stop();
             }
         }
         else if(collision.gameObject.tag == "Enemy Faker" && playerHasSword && !collision.GetComponent<CircleCollider2D>().enabled)
