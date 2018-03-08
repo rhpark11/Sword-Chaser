@@ -16,7 +16,7 @@ public class EnemyFaker : MonoBehaviour {
     // Use this for initialization
     void Start () {
         grounded = true;
-        //gameover = GameObject.Find("GameOverController"); //this doesn't work
+        gameover = GameObject.Find("GameOverController").GetComponent<GameOver>();
 	}
 	
 	// Update is called once per frame

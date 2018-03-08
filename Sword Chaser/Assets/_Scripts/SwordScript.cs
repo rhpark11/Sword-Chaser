@@ -42,8 +42,8 @@ public class SwordScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-        runes = player.GetComponent<PlayerController>().runes;        
+        if(player!=null)
+            runes = player.GetComponent<PlayerController>().runes;        
 
         if (startMoving && !playerHasSword)//player first encounters the sword or swordTimer is up
         {
@@ -117,7 +117,7 @@ public class SwordScript : MonoBehaviour {
                 initialVelocity = 8.0f;
 
                 ps.Play();
-                ps.enableEmission = true;
+                //ps.enableEmission = true;
             }
         }
     }
@@ -135,7 +135,7 @@ public class SwordScript : MonoBehaviour {
             {
                 playerHasSword = true;
                 swordSetup = true;
-                ps.enableEmission = false;
+                //ps.enableEmission = false;
                 ps.Stop();
             }
         }

@@ -47,6 +47,7 @@ public class PlayerController : MonoBehaviour {
     // Use this for initialization
     void Start () {
         //rb = GetComponent<Rigidbody2D>();
+        //sword = GameObject.Find("Sword");
         anim = GetComponent<Animator>();
         anim.SetBool("StartGame", false);
         isJumpRunning = false;
@@ -140,7 +141,7 @@ public class PlayerController : MonoBehaviour {
     {
         if (grounded && Input.GetKey(KeyCode.Space) && !isJumpRunning)
         {
-            GetComponent<Rigidbody2D>().AddForce(Vector2.up * jumpForce * 3.5f);
+            GetComponent<Rigidbody2D>().AddForce(Vector2.up * jumpForce * 3.7f);
             jumpTime += Time.deltaTime;
             anim.SetBool("Ground", false);
             isJumpRunning = true;
