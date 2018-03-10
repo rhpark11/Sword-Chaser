@@ -53,7 +53,7 @@ public class SwordScript : MonoBehaviour {
             y = Mathf.Sin(x);
             elapsedTime += Time.deltaTime;
 
-            if(elapsedTime > 1.0)
+            if(elapsedTime > 1.3)
             {
                 
                 if (runes == RunesToCollect - 2)
@@ -95,7 +95,7 @@ public class SwordScript : MonoBehaviour {
                 {
                     //acceleration = -0.1f;
                     
-                    initialVelocity = 0;
+                    initialVelocity = 2;
                 }
                 else
                 {
