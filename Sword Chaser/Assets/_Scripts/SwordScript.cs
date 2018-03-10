@@ -30,6 +30,8 @@ public class SwordScript : MonoBehaviour {
     private float x, y = 0;
     private float acceleration = 3.0f;
     private float initialVelocity = 8.0f;
+    private float decelerate = 0.0f; //this is a time variable
+    private bool slowDown = true;
 
     public LayerMask whatIsGround;
 
@@ -53,21 +55,53 @@ public class SwordScript : MonoBehaviour {
 
             if(elapsedTime > 1.0)
             {
-                acceleration = 0;
-                initialVelocity = player.GetComponent<Rigidbody2D>().velocity.x;
-
+                
                 if (runes == RunesToCollect - 2)
                 {
-                    initialVelocity = 2;
+                    
+                    if(slowDown && decelerate < 3.0f)
+                    {
+                        print(decelerate);
+                        decelerate += Time.deltaTime;
+                        acceleration = -0.1f;
+                    }
+                    else
+                    {
+                        decelerate = 0.0f;
+                        acceleration = 0.0f;
+                        slowDown = false;
+                    }
+                    //initialVelocity = 2;
                 }
-                if (runes == RunesToCollect - 1)
+                else if (runes == RunesToCollect - 1)
                 {
-                    initialVelocity = 1;
+                    //slowDown = true;
+                    
+                    if (decelerate < 3.0f)
+                    {
+                        print(decelerate);
+                        decelerate += Time.deltaTime;
+                        acceleration = -0.1f;
+                    }
+                    else
+                    {
+                        //decelerate = 0.0f;
+                        acceleration = 0.0f;
+                        slowDown = true;
+                    }
+                    //initialVelocity = 1;
                 }
-                if (runes == RunesToCollect)
+                else if (runes == RunesToCollect)
                 {
+                    //acceleration = -0.1f;
+                    
                     initialVelocity = 0;
                 }
+                else
+                {
+                    acceleration = 0.0f;
+                    initialVelocity = player.GetComponent<Rigidbody2D>().velocity.x;
+                }                
             }
             //so the sword doesnt fall behind the player
             //we can do this or change it so that if it does, the sword goes all the way back
@@ -90,7 +124,7 @@ public class SwordScript : MonoBehaviour {
             {
                 this.gameObject.transform.SetParent(player.transform);
                 transform.position = new Vector3(player.transform.position.x , player.transform.position.y, 0);
-                transform.Translate(0.9f, -0.1f, 0);
+                transform.Translate(1.5f, -0.1f, 0);
 
                 swordTimer = swordTime;  //set the swordTimer to public variable Xseconds
                 swordSetup = false;  //sword no longer needs to be setup
