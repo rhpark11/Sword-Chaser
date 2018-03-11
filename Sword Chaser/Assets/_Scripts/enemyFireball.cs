@@ -5,7 +5,7 @@ using UnityEngine;
 public class enemyFireball : MonoBehaviour {
 
     public GameOver gameover;
-    public float fireTime = 3f;
+    public float fireTime = 1.5f;
     public float maxFireTime = 3f;
 
     public GameObject fBall;

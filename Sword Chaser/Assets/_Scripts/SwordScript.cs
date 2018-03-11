@@ -100,13 +100,15 @@ public class SwordScript : MonoBehaviour {
                 else
                 {
                     acceleration = 0.0f;
-                    initialVelocity = player.GetComponent<Rigidbody2D>().velocity.x;
+                    if(player!=null)
+                        initialVelocity = player.GetComponent<Rigidbody2D>().velocity.x;
                 }                
             }
             //so the sword doesnt fall behind the player
             //we can do this or change it so that if it does, the sword goes all the way back
             //to the front.
-            if(transform.position.x <= player.transform.position.x)
+            
+            if(transform.position.x <= player.transform.position.x && player!=null)
             {
                 transform.position += new Vector3(player.GetComponent<Rigidbody2D>().velocity.x, y, 0) * Time.deltaTime;
             }
@@ -160,7 +162,7 @@ public class SwordScript : MonoBehaviour {
     {
         if(collision.gameObject.tag == "Player")
         {
-            if (!startMoving && this.gameObject.GetComponent<CircleCollider2D>().enabled)
+            if (!startMoving && this.gameObject.GetComponent<CircleCollider2D>().enabled == true)
             {
                 this.gameObject.GetComponent<CircleCollider2D>().enabled = false;
                 startMoving = true;

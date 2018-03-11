@@ -21,7 +21,7 @@ public class CountDownTimer : MonoBehaviour
     {
         if (count > 0)
             countText.text = count.ToString();
-        else if(count <=0 &&count > -1)
+        else if(count ==0)
         {
             countText.text = "GO!";
         }
@@ -30,6 +30,11 @@ public class CountDownTimer : MonoBehaviour
             StopCoroutine("CountDown");
             start = true;
         }
+    }
+
+    public void skip()
+    {
+        count = 0;
     }
 
     IEnumerator CountDown()

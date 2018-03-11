@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameover: {fileID: 0}
-  fireTime: 3
+  fireTime: 1.5
   maxFireTime: 3
   fBall: {fileID: 1981240385124200, guid: 6b2a96cefe1691b4c839efb5bde30c0f, type: 2}
 --- !u!114 &114750987903766044

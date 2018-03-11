@@ -16,7 +16,7 @@ public class FireballScript : MonoBehaviour {
         y = 0f;
         //elapsedTime = 0f;
         gameover = GameObject.Find("GameOverController").GetComponent<GameOver>();
-        originalY = this.transform.position.y;
+        originalY = this.transform.position.y+.5f;
         originalX = this.transform.position.x;
     }
 	

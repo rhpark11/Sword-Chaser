@@ -11,5 +11,5 @@ public class LoadSceneOnClick : MonoBehaviour
         SceneManager.LoadScene(level);
         Time.timeScale = 1;
     }
-
+    
 }

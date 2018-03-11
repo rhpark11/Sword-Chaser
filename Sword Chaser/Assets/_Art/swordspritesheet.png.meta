@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 3191e550b3fc973449033e15d5be86be
-timeCreated: 1520659091
-licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: swordspritesheet_0
@@ -48,17 +46,17 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 1
     aniso: -1
     mipBias: -1
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -334,7 +332,78 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-    outline: []
+    outline:
+    - - {x: -216.5, y: -706}
+      - {x: 23.5, y: -706}
+      - {x: 138.5, y: -684}
+      - {x: 138.5, y: -643}
+      - {x: 100.5, y: -629}
+      - {x: -412.5, y: -629}
+      - {x: -412.5, y: -670}
+      - {x: -405.5, y: -677}
+      - {x: -404.5, y: -677}
+      - {x: -369.5, y: -703}
+      - {x: -360.5, y: -706}
+      - {x: -331.5, y: -706}
+      - {x: -326.5, y: -703}
+      - {x: -324.5, y: -701}
+      - {x: -325.5, y: -698}
+    - - {x: 412.5, y: -354}
+      - {x: -402.5, y: -354}
+      - {x: -412.5, y: -372}
+      - {x: -412.5, y: -406}
+      - {x: -372.5, y: -431}
+      - {x: -323.5, y: -431}
+      - {x: -324.5, y: -426}
+      - {x: -291.5, y: -431}
+      - {x: 412.5, y: -431}
+    - - {x: 412.5, y: -129}
+      - {x: 412.5, y: -107}
+      - {x: 405.5, y: -79}
+      - {x: -391.5, y: -79}
+      - {x: -412.5, y: -103}
+      - {x: -412.5, y: -131}
+      - {x: -363.5, y: -156}
+      - {x: 297.5, y: -156}
+    - - {x: 385.5, y: 195}
+      - {x: 379.5, y: 196}
+      - {x: -389.5, y: 196}
+      - {x: -412.5, y: 166}
+      - {x: -412.5, y: 148}
+      - {x: -366.5, y: 119}
+      - {x: 297.5, y: 119}
+      - {x: 412.5, y: 146}
+      - {x: 412.5, y: 162}
+    - - {x: -185.5, y: 394}
+      - {x: -51.5, y: 394}
+      - {x: -47.5, y: 398}
+      - {x: 49.5, y: 394}
+      - {x: 310.5, y: 394}
+      - {x: 412.5, y: 418}
+      - {x: 412.5, y: 461}
+      - {x: 405.5, y: 471}
+      - {x: -412.5, y: 471}
+      - {x: -412.5, y: 415}
+      - {x: -362.5, y: 394}
+      - {x: -329.5, y: 394}
+      - {x: -322.5, y: 398}
+      - {x: -325.5, y: 402}
+      - {x: -291.5, y: 409}
+    - - {x: -185.5, y: 669}
+      - {x: -51.5, y: 669}
+      - {x: -47.5, y: 673}
+      - {x: 49.5, y: 669}
+      - {x: 310.5, y: 669}
+      - {x: 412.5, y: 693}
+      - {x: 412.5, y: 736}
+      - {x: 386.71582, y: 746}
+      - {x: -412.5, y: 746}
+      - {x: -412.5, y: 690}
+      - {x: -362.5, y: 669}
+      - {x: -329.5, y: 669}
+      - {x: -322.5, y: 673}
+      - {x: -325.5, y: 677}
+      - {x: -291.5, y: 684}
     physicsShape: []
   spritePackingTag: 
   userData: 

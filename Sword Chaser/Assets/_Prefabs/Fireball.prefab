@@ -37,7 +37,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4061114717414820}
   - component: {fileID: 212912175488585260}
-  - component: {fileID: 70199410752614240}
   - component: {fileID: 114609919453980814}
   - component: {fileID: 70297495216798964}
   - component: {fileID: 50840706640782650}
@@ -69,7 +68,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1981240385124200}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.8502579, y: -6.2852707, z: 0.13476562}
+  m_LocalPosition: {x: 22.319422, y: -5.377281, z: 0.13476562}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1.0441017}
   m_Children:
   - {fileID: 4054170453861086}
@@ -96,21 +95,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!70 &70199410752614240
-CapsuleCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1981240385124200}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.012256581, y: 0}
-  m_Size: {x: 0.8529197, y: 1}
-  m_Direction: 0
 --- !u!70 &70297495216798964
 CapsuleCollider2D:
   m_ObjectHideFlags: 1
@@ -138,7 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: 6
-  frequency: 0.9
+  frequency: 0.65
   gameover: {fileID: 0}
 --- !u!114 &114609919453980814
 MonoBehaviour:

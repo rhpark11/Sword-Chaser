@@ -26,6 +26,14 @@ public class SwordCutsceneScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        if(Input.anyKeyDown)
+        {
+            transform.position = target;
+            
+            transform.GetChild(0).transform.gameObject.SetActive(true);
+            timerScript.skip();
+            inTimer = false;
+        }
         if (transform.position.x != -5f && transform.position.y != -0.5f)
         {
             float step = speed * Time.deltaTime;
@@ -34,7 +42,7 @@ public class SwordCutsceneScript : MonoBehaviour {
         else if (transform.GetChild(0).transform.gameObject.activeInHierarchy == true && timerScript.start == true)
         {
             player.startGame = true;
-            transform.position = target;
+            //transform.position = target;
             c_collider.enabled = true;
             transform.GetChild(0).transform.gameObject.SetActive(false);
             inTimer = false;
