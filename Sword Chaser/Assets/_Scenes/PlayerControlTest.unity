@@ -1650,17 +1650,17 @@ Prefab:
     - target: {fileID: 198264980562574932, guid: 5a4ab3eab0901d14fb4557f1c051b58a,
         type: 2}
       propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.02173445
+      value: 0.64418095
       objectReference: {fileID: 0}
     - target: {fileID: 198264980562574932, guid: 5a4ab3eab0901d14fb4557f1c051b58a,
         type: 2}
       propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.9852941
+      value: 0.75735295
       objectReference: {fileID: 0}
     - target: {fileID: 198264980562574932, guid: 5a4ab3eab0901d14fb4557f1c051b58a,
         type: 2}
       propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.054960836
+      value: 0.1726319
       objectReference: {fileID: 0}
     - target: {fileID: 198264980562574932, guid: 5a4ab3eab0901d14fb4557f1c051b58a,
         type: 2}
@@ -1759,6 +1759,16 @@ Prefab:
         type: 2}
       propertyPath: m_Size.y
       value: 0.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 198264980562574932, guid: 5a4ab3eab0901d14fb4557f1c051b58a,
+        type: 2}
+      propertyPath: ShapeModule.radius.value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198264980562574932, guid: 5a4ab3eab0901d14fb4557f1c051b58a,
+        type: 2}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 61368865353161568, guid: 5a4ab3eab0901d14fb4557f1c051b58a, type: 2}
@@ -2354,7 +2364,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Score: 0'
+  m_Text: 'Points: 0'
 --- !u!222 &1632977257
 CanvasRenderer:
   m_ObjectHideFlags: 0
