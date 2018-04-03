@@ -616,6 +616,24 @@ Prefab:
       propertyPath: speed
       value: 0.25
       objectReference: {fileID: 0}
+    - target: {fileID: 212039561134831014, guid: 112960c8f3a996347bb482e89c3c24d6,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 57ada67c88aa3144baf813623182da16,
+        type: 3}
+    - target: {fileID: 212639616802707330, guid: 112960c8f3a996347bb482e89c3c24d6,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 57ada67c88aa3144baf813623182da16,
+        type: 3}
+    - target: {fileID: 212319253144250842, guid: 112960c8f3a996347bb482e89c3c24d6,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 57ada67c88aa3144baf813623182da16,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 112960c8f3a996347bb482e89c3c24d6, type: 2}
   m_IsPrefabParent: 0
