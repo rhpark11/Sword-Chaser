@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyFaker : MonoBehaviour {
 
-    public float jumpForce = 200.0f;
+    public float jumpForce = 300.0f;
     bool grounded = false;
     public Transform groundCheck;
     float groundRadius = 0.2f;

@@ -139,7 +139,7 @@ public class SwordScript : MonoBehaviour {
                 startMoving = true;  //run the sword escape code
 
                 this.gameObject.transform.SetParent(null);  //break the parent child relationship
-                this.gameObject.transform.Translate(0.5f, 0, 0);  //break the collision by translation in local space
+                this.gameObject.transform.Translate(1.3f, 0, 0);  //break the collision by translation in local space
                 
                 playerHasSword = false;  //player no longer has the  sword
 

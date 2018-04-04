@@ -9,7 +9,7 @@ public class SwordCutsceneScript : MonoBehaviour {
     CountDownTimer timerScript;
     CircleCollider2D c_collider;
     Vector3 target;
-    int speed = 3;
+    int speed = 4;
 
     //control the hover during timer intro
     private bool inTimer = false;
@@ -20,7 +20,7 @@ public class SwordCutsceneScript : MonoBehaviour {
         timerScript = this.gameObject.transform.GetChild(0).gameObject.GetComponent<CountDownTimer>();
         c_collider = GetComponent<CircleCollider2D>();
         c_collider.enabled = false;
-		target = new Vector3(-5f, -0.5f, 0f);
+		target = new Vector3(2f, 0.5f, 0f);
     }
 	
 	// Update is called once per frame
@@ -34,7 +34,7 @@ public class SwordCutsceneScript : MonoBehaviour {
             timerScript.skip();
             inTimer = false;
         }
-        if (transform.position.x != -5f && transform.position.y != -0.5f)
+        if (transform.position.x != 2f && transform.position.y != 0.5f)
         {
             float step = speed * Time.deltaTime;
             transform.position = Vector3.MoveTowards(transform.position, target, step);
