@@ -1,24 +1,30 @@
 fileFormatVersion: 2
-guid: 8134ec15a21257c4d8d03323fa2c829f
-timeCreated: 1522794751
+guid: 62a50f654006cf94d97971d7928c00be
+timeCreated: 1522826566
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: SquiggleRollSprite_0
-    21300002: SquiggleRollSprite_1
-    21300004: SquiggleRollSprite_2
-    21300006: SquiggleRollSprite_3
-    21300008: SquiggleRollSprite_4
-    21300010: SquiggleRollSprite_5
-    21300012: SquiggleRollSprite_6
-    21300014: SquiggleRollSprite_7
-    21300016: SquiggleRollSprite_8
-    21300018: SquiggleRollSprite_9
-    21300020: SquiggleRollSprite_10
-    21300022: SquiggleRollSprite_11
-    21300024: SquiggleRollSprite_12
-    21300026: SquiggleRollSprite_13
-    21300028: SquiggleRollSprite_14
+    21300000: RedEnemyFireSprite_0
+    21300002: RedEnemyFireSprite_1
+    21300004: RedEnemyFireSprite_2
+    21300006: RedEnemyFireSprite_3
+    21300008: RedEnemyFireSprite_4
+    21300010: RedEnemyFireSprite_5
+    21300012: RedEnemyFireSprite_6
+    21300014: RedEnemyFireSprite_7
+    21300016: RedEnemyFireSprite_8
+    21300018: RedEnemyFireSprite_9
+    21300020: RedEnemyFireSprite_10
+    21300022: RedEnemyFireSprite_11
+    21300024: RedEnemyFireSprite_12
+    21300026: RedEnemyFireSprite_13
+    21300028: RedEnemyFireSprite_14
+    21300030: RedEnemyFireSprite_15
+    21300032: RedEnemyFireSprite_16
+    21300034: RedEnemyFireSprite_17
+    21300036: RedEnemyFireSprite_18
+    21300038: RedEnemyFireSprite_19
+    21300040: RedEnemyFireSprite_20
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -116,211 +122,295 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SquiggleRollSprite_0
+      name: RedEnemyFireSprite_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 446
-        width: 185
-        height: 223
+        y: 1248
+        width: 165
+        height: 208
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRollSprite_1
+      name: RedEnemyFireSprite_1
       rect:
         serializedVersion: 2
-        x: 191
-        y: 452
-        width: 178
-        height: 217
+        x: 165
+        y: 1248
+        width: 165
+        height: 208
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRollSprite_2
+      name: RedEnemyFireSprite_2
       rect:
         serializedVersion: 2
-        x: 370
-        y: 446
-        width: 185
-        height: 223
+        x: 330
+        y: 1248
+        width: 165
+        height: 208
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRollSprite_3
-      rect:
-        serializedVersion: 2
-        x: 555
-        y: 446
-        width: 185
-        height: 223
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRollSprite_4
-      rect:
-        serializedVersion: 2
-        x: 740
-        y: 446
-        width: 185
-        height: 223
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRollSprite_5
+      name: RedEnemyFireSprite_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 223
-        width: 185
-        height: 223
+        y: 1040
+        width: 165
+        height: 208
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRollSprite_6
+      name: RedEnemyFireSprite_4
       rect:
         serializedVersion: 2
-        x: 185
-        y: 223
-        width: 185
-        height: 223
+        x: 165
+        y: 1040
+        width: 165
+        height: 208
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRollSprite_7
+      name: RedEnemyFireSprite_5
       rect:
         serializedVersion: 2
-        x: 370
-        y: 223
-        width: 185
-        height: 223
+        x: 330
+        y: 1040
+        width: 165
+        height: 208
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRollSprite_8
+      name: RedEnemyFireSprite_6
       rect:
         serializedVersion: 2
-        x: 555
-        y: 223
-        width: 185
-        height: 223
+        x: 0
+        y: 832
+        width: 165
+        height: 208
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRollSprite_9
+      name: RedEnemyFireSprite_7
       rect:
         serializedVersion: 2
-        x: 740
-        y: 223
-        width: 185
-        height: 223
+        x: 165
+        y: 832
+        width: 165
+        height: 208
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRollSprite_10
+      name: RedEnemyFireSprite_8
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 832
+        width: 165
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RedEnemyFireSprite_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 624
+        width: 165
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RedEnemyFireSprite_10
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 624
+        width: 165
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RedEnemyFireSprite_11
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 624
+        width: 165
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RedEnemyFireSprite_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 165
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RedEnemyFireSprite_13
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 416
+        width: 165
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RedEnemyFireSprite_14
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 416
+        width: 165
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RedEnemyFireSprite_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 208
+        width: 165
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RedEnemyFireSprite_16
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 208
+        width: 165
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RedEnemyFireSprite_17
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 208
+        width: 165
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RedEnemyFireSprite_18
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 185
-        height: 223
+        width: 165
+        height: 208
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRollSprite_11
+      name: RedEnemyFireSprite_19
       rect:
         serializedVersion: 2
-        x: 185
+        x: 165
         y: 0
-        width: 185
-        height: 223
+        width: 165
+        height: 208
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRollSprite_12
+      name: RedEnemyFireSprite_20
       rect:
         serializedVersion: 2
-        x: 370
+        x: 330
         y: 0
-        width: 185
-        height: 223
+        width: 165
+        height: 208
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRollSprite_13
-      rect:
-        serializedVersion: 2
-        x: 555
-        y: 0
-        width: 185
-        height: 223
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRollSprite_14
-      rect:
-        serializedVersion: 2
-        x: 740
-        y: 0
-        width: 185
-        height: 223
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

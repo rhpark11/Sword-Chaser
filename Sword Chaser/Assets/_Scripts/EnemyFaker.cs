@@ -13,24 +13,32 @@ public class EnemyFaker : MonoBehaviour {
     public GameOver gameover;
     private bool jump;
 
+    Animator anim;
+
     // Use this for initialization
     void Start () {
+        anim = GetComponent<Animator>();
         grounded = true;
         gameover = GameObject.Find("GameOverController").GetComponent<GameOver>();
-	}
+        anim.SetBool("grounded", grounded);
+    }
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-        if(jump)
+        grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
+
+        if (jump)
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
             jump = false;
         }
+        anim.SetBool("grounded", grounded);
+        anim.SetFloat("FakerVSpeed", GetComponent<Rigidbody2D>().velocity.y);
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {   
-        grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
+        //grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
         
         if (grounded && collider.tag == "Player")
         {

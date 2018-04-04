@@ -25,12 +25,14 @@ public class PlayerController : MonoBehaviour {
 
     public GameOver gOverScript;
 
+    //public Quaternion originalRotationValue;
+
     /* need something here to check for ceilings
     */
-    bool ceiling = false;
-    public Transform ceilingCheck;
-    float ceilingRadius = 0.2f;
-    public LayerMask whatIsCeiling;
+    //bool ceiling = false;
+    //public Transform ceilingCheck;
+    //float ceilingRadius = 0.2f;
+    //public LayerMask whatIsCeiling;
 
     /* check if we are sliding; not need because we use two colliders, one for head and torso, one for legs.
      * Upon slide, head and torso collision box is disabled which allows for slide under game objects
@@ -54,6 +56,7 @@ public class PlayerController : MonoBehaviour {
         maxJumpTime = 0.25f;
         jumpTime = 0.0f;
         move = 0;
+        //originalRotationValue = transform.rotation;
     }
 	
     void FixedUpdate()
@@ -95,18 +98,20 @@ public class PlayerController : MonoBehaviour {
             }*/
 
             //non-physics
-            if (ceiling)
-                slide();
+            //if (ceiling)
+            //    slide();
             if (!sliding && Input.GetKey(KeyCode.LeftControl) && !isJumpRunning)
             {
                 slide();
+                //transform.Rotate(0, 0, Time.deltaTime * 5f);
             }
-            else if (Input.GetKeyUp(KeyCode.LeftControl) || (!ceiling && sliding))
+            else if (Input.GetKeyUp(KeyCode.LeftControl) && sliding)
             {
                 anim.SetBool("Slide", false);
                 sliding = false;
                 anim.SetBool("Ground", true);
                 GetComponent<BoxCollider2D>().enabled = true;
+                //transform.rotation = Quaternion.Slerp(transform.rotation, originalRotationValue, Time.time);
             }
             if(transform.position.y < -5)
             {
@@ -132,8 +137,8 @@ public class PlayerController : MonoBehaviour {
         playerIsGrounded = grounded;
 
         //check to see if player has touched a ceiling
-        ceiling = Physics2D.OverlapCircle(ceilingCheck.position, ceilingRadius, whatIsCeiling);
-        anim.SetBool("Ceiling", ceiling);
+        //ceiling = Physics2D.OverlapCircle(ceilingCheck.position, ceilingRadius, whatIsCeiling);
+        //anim.SetBool("Ceiling", ceiling);
         //Debug.Log(ceiling);
     }
 

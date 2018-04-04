@@ -1,66 +1,52 @@
 fileFormatVersion: 2
-guid: 0951ae293f4f41344921036e2e9423e1
-timeCreated: 1522736234
+guid: 71a29ce2a5822324c9e7e39e8cb2191f
+timeCreated: 1522826567
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: SquiggleRunSprite_0
-    21300002: SquiggleRunSprite_1
-    21300004: SquiggleRunSprite_2
-    21300006: SquiggleRunSprite_3
-    21300008: SquiggleRunSprite_4
-    21300010: SquiggleRunSprite_5
-    21300012: SquiggleRunSprite_6
-    21300014: SquiggleRunSprite_7
-    21300016: SquiggleRunSprite_8
-    21300018: SquiggleRunSprite_9
-    21300020: SquiggleRunSprite_10
-    21300022: SquiggleRunSprite_11
-    21300024: SquiggleRunSprite_12
-    21300026: SquiggleRunSprite_13
-    21300028: SquiggleRunSprite_14
-    21300030: SquiggleRunSprite_15
-    21300032: SquiggleRunSprite_16
-    21300034: SquiggleRunSprite_17
-    21300036: SquiggleRunSprite_18
-    21300038: SquiggleRunSprite_19
-    21300040: SquiggleRunSprite_20
-    21300042: SquiggleRunSprite_21
-    21300044: SquiggleRunSprite_22
-    21300046: SquiggleRunSprite_23
-    21300048: SquiggleRunSprite_24
-    21300050: SquiggleRunSprite_25
-    21300052: SquiggleRunSprite_26
-    21300054: SquiggleRunSprite_27
-    21300056: SquiggleRunSprite_28
-    21300058: SquiggleRunSprite_29
-    21300060: SquiggleRunSprite_30
-    21300062: SquiggleRunSprite_31
-    21300064: SquiggleRunSprite_32
-    21300066: SquiggleRunSprite_33
-    21300068: SquiggleRunSprite_34
-    21300070: SquiggleRunSprite_35
-    21300072: SquiggleRunSprite_36
-    21300074: SquiggleRunSprite_37
-    21300076: SquiggleRunSprite_38
-    21300078: SquiggleRunSprite_39
-    21300080: SquiggleRunSprite_40
-    21300082: SquiggleRunSprite_41
-    21300084: SquiggleRunSprite_42
-    21300086: SquiggleRunSprite_43
-    21300088: SquiggleRunSprite_44
-    21300090: SquiggleRunSprite_45
-    21300092: SquiggleRunSprite_46
-    21300094: SquiggleRunSprite_47
-    21300096: SquiggleRunSprite_48
-    21300098: SquiggleRunSprite_49
-    21300100: SquiggleRunSprite_50
-    21300102: SquiggleRunSprite_51
-    21300104: SquiggleRunSprite_52
-    21300106: SquiggleRunSprite_53
-    21300108: SquiggleRunSprite_54
-    21300110: SquiggleRunSprite_55
-    21300112: SquiggleRunSprite_56
+    21300000: BlueEnemyJumpSprite_0
+    21300002: BlueEnemyJumpSprite_1
+    21300004: BlueEnemyJumpSprite_2
+    21300006: BlueEnemyJumpSprite_3
+    21300008: BlueEnemyJumpSprite_4
+    21300010: BlueEnemyJumpSprite_5
+    21300012: BlueEnemyJumpSprite_6
+    21300014: BlueEnemyJumpSprite_7
+    21300016: BlueEnemyJumpSprite_8
+    21300018: BlueEnemyJumpSprite_9
+    21300020: BlueEnemyJumpSprite_10
+    21300022: BlueEnemyJumpSprite_11
+    21300024: BlueEnemyJumpSprite_12
+    21300026: BlueEnemyJumpSprite_13
+    21300028: BlueEnemyJumpSprite_14
+    21300030: BlueEnemyJumpSprite_15
+    21300032: BlueEnemyJumpSprite_16
+    21300034: BlueEnemyJumpSprite_17
+    21300036: BlueEnemyJumpSprite_18
+    21300038: BlueEnemyJumpSprite_19
+    21300040: BlueEnemyJumpSprite_20
+    21300042: BlueEnemyJumpSprite_21
+    21300044: BlueEnemyJumpSprite_22
+    21300046: BlueEnemyJumpSprite_23
+    21300048: BlueEnemyJumpSprite_24
+    21300050: BlueEnemyJumpSprite_25
+    21300052: BlueEnemyJumpSprite_26
+    21300054: BlueEnemyJumpSprite_27
+    21300056: BlueEnemyJumpSprite_28
+    21300058: BlueEnemyJumpSprite_29
+    21300060: BlueEnemyJumpSprite_30
+    21300062: BlueEnemyJumpSprite_31
+    21300064: BlueEnemyJumpSprite_32
+    21300066: BlueEnemyJumpSprite_33
+    21300068: BlueEnemyJumpSprite_34
+    21300070: BlueEnemyJumpSprite_35
+    21300072: BlueEnemyJumpSprite_36
+    21300074: BlueEnemyJumpSprite_37
+    21300076: BlueEnemyJumpSprite_38
+    21300078: BlueEnemyJumpSprite_39
+    21300080: BlueEnemyJumpSprite_40
+    21300082: BlueEnemyJumpSprite_41
+    21300084: BlueEnemyJumpSprite_42
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -158,13 +144,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SquiggleRunSprite_0
+      name: BlueEnemyJumpSprite_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1132
-        width: 336
-        height: 283
+        y: 762
+        width: 168
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,13 +158,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRunSprite_1
+      name: BlueEnemyJumpSprite_1
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 762
+        width: 168
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueEnemyJumpSprite_2
       rect:
         serializedVersion: 2
         x: 336
-        y: 1132
-        width: 336
-        height: 283
+        y: 762
+        width: 168
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,13 +186,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRunSprite_2
+      name: BlueEnemyJumpSprite_3
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 762
+        width: 168
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueEnemyJumpSprite_4
       rect:
         serializedVersion: 2
         x: 672
-        y: 1132
-        width: 336
-        height: 283
+        y: 762
+        width: 168
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,13 +214,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRunSprite_3
+      name: BlueEnemyJumpSprite_5
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 762
+        width: 168
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueEnemyJumpSprite_6
       rect:
         serializedVersion: 2
         x: 1008
-        y: 1132
-        width: 336
-        height: 283
+        y: 762
+        width: 168
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,13 +242,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRunSprite_4
+      name: BlueEnemyJumpSprite_7
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 762
+        width: 168
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueEnemyJumpSprite_8
       rect:
         serializedVersion: 2
         x: 1344
-        y: 1132
-        width: 336
-        height: 283
+        y: 762
+        width: 168
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,13 +270,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRunSprite_5
+      name: BlueEnemyJumpSprite_9
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 762
+        width: 168
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueEnemyJumpSprite_10
       rect:
         serializedVersion: 2
         x: 1680
-        y: 1132
-        width: 336
-        height: 283
+        y: 762
+        width: 168
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,97 +298,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRunSprite_6
-      rect:
-        serializedVersion: 2
-        x: 2016
-        y: 1132
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_7
-      rect:
-        serializedVersion: 2
-        x: 2352
-        y: 1132
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_8
-      rect:
-        serializedVersion: 2
-        x: 2688
-        y: 1132
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_9
-      rect:
-        serializedVersion: 2
-        x: 3024
-        y: 1132
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_10
-      rect:
-        serializedVersion: 2
-        x: 3360
-        y: 1132
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_11
-      rect:
-        serializedVersion: 2
-        x: 3696
-        y: 1132
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_12
+      name: BlueEnemyJumpSprite_11
       rect:
         serializedVersion: 2
         x: 0
-        y: 849
-        width: 336
-        height: 283
+        y: 508
+        width: 168
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -340,13 +312,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRunSprite_13
+      name: BlueEnemyJumpSprite_12
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 508
+        width: 168
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueEnemyJumpSprite_13
       rect:
         serializedVersion: 2
         x: 336
-        y: 849
-        width: 336
-        height: 283
+        y: 508
+        width: 168
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,13 +340,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRunSprite_14
+      name: BlueEnemyJumpSprite_14
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 508
+        width: 168
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueEnemyJumpSprite_15
       rect:
         serializedVersion: 2
         x: 672
-        y: 849
-        width: 336
-        height: 283
+        y: 508
+        width: 168
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,13 +368,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRunSprite_15
+      name: BlueEnemyJumpSprite_16
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 508
+        width: 168
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueEnemyJumpSprite_17
       rect:
         serializedVersion: 2
         x: 1008
-        y: 849
-        width: 336
-        height: 283
+        y: 508
+        width: 168
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -382,13 +396,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRunSprite_16
+      name: BlueEnemyJumpSprite_18
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 508
+        width: 168
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueEnemyJumpSprite_19
       rect:
         serializedVersion: 2
         x: 1344
-        y: 849
-        width: 336
-        height: 283
+        y: 508
+        width: 168
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -396,13 +424,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRunSprite_17
+      name: BlueEnemyJumpSprite_20
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 508
+        width: 168
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueEnemyJumpSprite_21
       rect:
         serializedVersion: 2
         x: 1680
-        y: 849
-        width: 336
-        height: 283
+        y: 508
+        width: 168
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -410,97 +452,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRunSprite_18
-      rect:
-        serializedVersion: 2
-        x: 2016
-        y: 849
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_19
-      rect:
-        serializedVersion: 2
-        x: 2352
-        y: 849
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_20
-      rect:
-        serializedVersion: 2
-        x: 2688
-        y: 849
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_21
-      rect:
-        serializedVersion: 2
-        x: 3024
-        y: 849
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_22
-      rect:
-        serializedVersion: 2
-        x: 3360
-        y: 849
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_23
-      rect:
-        serializedVersion: 2
-        x: 3696
-        y: 849
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_24
+      name: BlueEnemyJumpSprite_22
       rect:
         serializedVersion: 2
         x: 0
-        y: 566
-        width: 336
-        height: 283
+        y: 254
+        width: 168
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -508,13 +466,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRunSprite_25
+      name: BlueEnemyJumpSprite_23
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 254
+        width: 168
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueEnemyJumpSprite_24
       rect:
         serializedVersion: 2
         x: 336
-        y: 566
-        width: 336
-        height: 283
+        y: 254
+        width: 168
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -522,13 +494,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRunSprite_26
+      name: BlueEnemyJumpSprite_25
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 254
+        width: 168
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueEnemyJumpSprite_26
       rect:
         serializedVersion: 2
         x: 672
-        y: 566
-        width: 336
-        height: 283
+        y: 254
+        width: 168
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -536,13 +522,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRunSprite_27
+      name: BlueEnemyJumpSprite_27
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 254
+        width: 168
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueEnemyJumpSprite_28
       rect:
         serializedVersion: 2
         x: 1008
-        y: 566
-        width: 336
-        height: 283
+        y: 254
+        width: 168
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -550,13 +550,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRunSprite_28
+      name: BlueEnemyJumpSprite_29
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 254
+        width: 168
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueEnemyJumpSprite_30
       rect:
         serializedVersion: 2
         x: 1344
-        y: 566
-        width: 336
-        height: 283
+        y: 254
+        width: 168
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -564,13 +578,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRunSprite_29
+      name: BlueEnemyJumpSprite_31
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 254
+        width: 168
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueEnemyJumpSprite_32
       rect:
         serializedVersion: 2
         x: 1680
-        y: 566
-        width: 336
-        height: 283
+        y: 254
+        width: 168
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -578,265 +606,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRunSprite_30
-      rect:
-        serializedVersion: 2
-        x: 2016
-        y: 566
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_31
-      rect:
-        serializedVersion: 2
-        x: 2352
-        y: 566
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_32
-      rect:
-        serializedVersion: 2
-        x: 2688
-        y: 566
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_33
-      rect:
-        serializedVersion: 2
-        x: 3024
-        y: 566
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_34
-      rect:
-        serializedVersion: 2
-        x: 3360
-        y: 566
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_35
-      rect:
-        serializedVersion: 2
-        x: 3696
-        y: 566
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_36
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 283
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_37
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 283
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_38
-      rect:
-        serializedVersion: 2
-        x: 672
-        y: 283
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_39
-      rect:
-        serializedVersion: 2
-        x: 1008
-        y: 283
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_40
-      rect:
-        serializedVersion: 2
-        x: 1344
-        y: 283
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_41
-      rect:
-        serializedVersion: 2
-        x: 1680
-        y: 283
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_42
-      rect:
-        serializedVersion: 2
-        x: 2016
-        y: 283
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_43
-      rect:
-        serializedVersion: 2
-        x: 2352
-        y: 283
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_44
-      rect:
-        serializedVersion: 2
-        x: 2688
-        y: 283
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_45
-      rect:
-        serializedVersion: 2
-        x: 3024
-        y: 283
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_46
-      rect:
-        serializedVersion: 2
-        x: 3360
-        y: 283
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_47
-      rect:
-        serializedVersion: 2
-        x: 3696
-        y: 283
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_48
+      name: BlueEnemyJumpSprite_33
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 336
-        height: 283
+        width: 168
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -844,13 +620,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRunSprite_49
+      name: BlueEnemyJumpSprite_34
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 168
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueEnemyJumpSprite_35
       rect:
         serializedVersion: 2
         x: 336
         y: 0
-        width: 336
-        height: 283
+        width: 168
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -858,13 +648,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRunSprite_50
+      name: BlueEnemyJumpSprite_36
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 0
+        width: 168
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueEnemyJumpSprite_37
       rect:
         serializedVersion: 2
         x: 672
         y: 0
-        width: 336
-        height: 283
+        width: 168
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -872,13 +676,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRunSprite_51
+      name: BlueEnemyJumpSprite_38
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 168
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueEnemyJumpSprite_39
       rect:
         serializedVersion: 2
         x: 1008
         y: 0
-        width: 336
-        height: 283
+        width: 168
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -886,13 +704,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRunSprite_52
+      name: BlueEnemyJumpSprite_40
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 0
+        width: 168
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueEnemyJumpSprite_41
       rect:
         serializedVersion: 2
         x: 1344
         y: 0
-        width: 336
-        height: 283
+        width: 168
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -900,55 +732,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRunSprite_53
+      name: BlueEnemyJumpSprite_42
       rect:
         serializedVersion: 2
-        x: 1680
+        x: 1512
         y: 0
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_54
-      rect:
-        serializedVersion: 2
-        x: 2016
-        y: 0
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_55
-      rect:
-        serializedVersion: 2
-        x: 2352
-        y: 0
-        width: 336
-        height: 283
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRunSprite_56
-      rect:
-        serializedVersion: 2
-        x: 2688
-        y: 0
-        width: 336
-        height: 283
+        width: 168
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

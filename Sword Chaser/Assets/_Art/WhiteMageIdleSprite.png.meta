@@ -1,24 +1,30 @@
 fileFormatVersion: 2
-guid: 8134ec15a21257c4d8d03323fa2c829f
-timeCreated: 1522794751
+guid: 802a0081f8646c04b8ac9598cff7fa5f
+timeCreated: 1522826568
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: SquiggleRollSprite_0
-    21300002: SquiggleRollSprite_1
-    21300004: SquiggleRollSprite_2
-    21300006: SquiggleRollSprite_3
-    21300008: SquiggleRollSprite_4
-    21300010: SquiggleRollSprite_5
-    21300012: SquiggleRollSprite_6
-    21300014: SquiggleRollSprite_7
-    21300016: SquiggleRollSprite_8
-    21300018: SquiggleRollSprite_9
-    21300020: SquiggleRollSprite_10
-    21300022: SquiggleRollSprite_11
-    21300024: SquiggleRollSprite_12
-    21300026: SquiggleRollSprite_13
-    21300028: SquiggleRollSprite_14
+    21300000: WhiteMageIdleSprite_0
+    21300002: WhiteMageIdleSprite_1
+    21300004: WhiteMageIdleSprite_2
+    21300006: WhiteMageIdleSprite_3
+    21300008: WhiteMageIdleSprite_4
+    21300010: WhiteMageIdleSprite_5
+    21300012: WhiteMageIdleSprite_6
+    21300014: WhiteMageIdleSprite_7
+    21300016: WhiteMageIdleSprite_8
+    21300018: WhiteMageIdleSprite_9
+    21300020: WhiteMageIdleSprite_10
+    21300022: WhiteMageIdleSprite_11
+    21300024: WhiteMageIdleSprite_12
+    21300026: WhiteMageIdleSprite_13
+    21300028: WhiteMageIdleSprite_14
+    21300030: WhiteMageIdleSprite_15
+    21300032: WhiteMageIdleSprite_16
+    21300034: WhiteMageIdleSprite_17
+    21300036: WhiteMageIdleSprite_18
+    21300038: WhiteMageIdleSprite_19
+    21300040: WhiteMageIdleSprite_20
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -116,211 +122,295 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SquiggleRollSprite_0
+      name: WhiteMageIdleSprite_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 446
-        width: 185
-        height: 223
+        y: 1248
+        width: 149
+        height: 208
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRollSprite_1
+      name: WhiteMageIdleSprite_1
       rect:
         serializedVersion: 2
-        x: 191
-        y: 452
-        width: 178
-        height: 217
+        x: 149
+        y: 1248
+        width: 149
+        height: 208
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRollSprite_2
+      name: WhiteMageIdleSprite_2
       rect:
         serializedVersion: 2
-        x: 370
-        y: 446
-        width: 185
-        height: 223
+        x: 298
+        y: 1248
+        width: 149
+        height: 208
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRollSprite_3
-      rect:
-        serializedVersion: 2
-        x: 555
-        y: 446
-        width: 185
-        height: 223
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRollSprite_4
-      rect:
-        serializedVersion: 2
-        x: 740
-        y: 446
-        width: 185
-        height: 223
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRollSprite_5
+      name: WhiteMageIdleSprite_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 223
-        width: 185
-        height: 223
+        y: 1040
+        width: 149
+        height: 208
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRollSprite_6
+      name: WhiteMageIdleSprite_4
       rect:
         serializedVersion: 2
-        x: 185
-        y: 223
-        width: 185
-        height: 223
+        x: 149
+        y: 1040
+        width: 149
+        height: 208
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRollSprite_7
+      name: WhiteMageIdleSprite_5
       rect:
         serializedVersion: 2
-        x: 370
-        y: 223
-        width: 185
-        height: 223
+        x: 298
+        y: 1040
+        width: 149
+        height: 208
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRollSprite_8
+      name: WhiteMageIdleSprite_6
       rect:
         serializedVersion: 2
-        x: 555
-        y: 223
-        width: 185
-        height: 223
+        x: 0
+        y: 832
+        width: 149
+        height: 208
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRollSprite_9
+      name: WhiteMageIdleSprite_7
       rect:
         serializedVersion: 2
-        x: 740
-        y: 223
-        width: 185
-        height: 223
+        x: 149
+        y: 832
+        width: 149
+        height: 208
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRollSprite_10
+      name: WhiteMageIdleSprite_8
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 832
+        width: 149
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WhiteMageIdleSprite_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 624
+        width: 149
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WhiteMageIdleSprite_10
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 624
+        width: 149
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WhiteMageIdleSprite_11
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 624
+        width: 149
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WhiteMageIdleSprite_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 149
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WhiteMageIdleSprite_13
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 416
+        width: 149
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WhiteMageIdleSprite_14
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 416
+        width: 149
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WhiteMageIdleSprite_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 208
+        width: 149
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WhiteMageIdleSprite_16
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 208
+        width: 149
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WhiteMageIdleSprite_17
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 208
+        width: 149
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WhiteMageIdleSprite_18
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 185
-        height: 223
+        width: 149
+        height: 208
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRollSprite_11
+      name: WhiteMageIdleSprite_19
       rect:
         serializedVersion: 2
-        x: 185
+        x: 149
         y: 0
-        width: 185
-        height: 223
+        width: 149
+        height: 208
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SquiggleRollSprite_12
+      name: WhiteMageIdleSprite_20
       rect:
         serializedVersion: 2
-        x: 370
+        x: 298
         y: 0
-        width: 185
-        height: 223
+        width: 149
+        height: 208
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRollSprite_13
-      rect:
-        serializedVersion: 2
-        x: 555
-        y: 0
-        width: 185
-        height: 223
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: SquiggleRollSprite_14
-      rect:
-        serializedVersion: 2
-        x: 740
-        y: 0
-        width: 185
-        height: 223
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

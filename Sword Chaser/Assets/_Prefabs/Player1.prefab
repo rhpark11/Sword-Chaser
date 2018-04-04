@@ -114,7 +114,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1878257953730772}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.6, z: 0}
+  m_LocalPosition: {x: 0.297, y: -1.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4897968899850338}
@@ -127,8 +127,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1371741191465748}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.08, y: -1.52, z: 0.21136929}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -8.009, y: -2.036, z: 0.21136929}
+  m_LocalScale: {x: 0.911166, y: 0.91787374, z: 1}
   m_Children:
   - {fileID: 4573526097643650}
   - {fileID: 4448217027738010}
@@ -168,26 +168,11 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.38149834}
+  m_Offset: {x: 0.34806776, y: -0.4510256}
   serializedVersion: 2
-  m_Radius: 0.26659393
+  m_Radius: 0.59284115
 --- !u!58 &58423986538715660
 CircleCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1371741191465748}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.025823355, y: -0.45632255}
-  serializedVersion: 2
-  m_Radius: 0.18846858
---- !u!60 &60762549240920228
-PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -198,11 +183,26 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
+  m_Offset: {x: 0.34113836, y: -0.37410057}
+  serializedVersion: 2
+  m_Radius: 0.6934848
+--- !u!60 &60762549240920228
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1371741191465748}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.375, y: 1.375}
+    oldSize: {x: 2.4611113, y: 2.0916667}
     newSize: {x: 1.375, y: 1.375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -261,24 +261,24 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1371741191465748}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.012911797, y: 0.059617102}
+  m_Offset: {x: 0.41977763, y: 0.20474863}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.375, y: 1.375}
+    oldSize: {x: 2.4611113, y: 2.0916667}
     newSize: {x: 1.375, y: 1.375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.39370155, y: 0.881323}
+  m_Size: {x: 1.2913518, y: 1.4615014}
   m_EdgeRadius: 0
 --- !u!82 &82510117235277978
 AudioSource:
@@ -299,7 +299,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 0.6324487
+  MinDistance: 0.9438456
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -390,17 +390,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sword: {fileID: 0}
   startGame: 0
-  jumpForce: 2.1
+  jumpForce: 2.3
   grounded: 1
   groundCheck: {fileID: 4573526097643650}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 4294526431
   gOverScript: {fileID: 0}
-  ceilingCheck: {fileID: 4448217027738010}
-  whatIsCeiling:
-    serializedVersion: 2
-    m_Bits: 4294526463
   maxSlideTime: 1
   SlideCollider: {fileID: 1687113845385378}
   runes: 0
@@ -455,7 +451,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300012, guid: 803baf1ea73913f46b25e07d0a79df22, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9b5d2fc0e110f9a47949e76d425ed412, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -108,7 +108,7 @@ public class SwordScript : MonoBehaviour {
             //we can do this or change it so that if it does, the sword goes all the way back
             //to the front.
             
-            if(transform.position.x <= player.transform.position.x && player!=null)
+            if(player != null && transform.position.x <= player.transform.position.x)
             {
                 transform.position += new Vector3(player.GetComponent<Rigidbody2D>().velocity.x, y, 0) * Time.deltaTime;
             }
