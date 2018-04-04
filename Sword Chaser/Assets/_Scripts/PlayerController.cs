@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour {
 
     public GameOver gOverScript;
 
-    //public Quaternion originalRotationValue;
+    public Quaternion originalRotationValue;
 
     /* need something here to check for ceilings
     */
@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour {
         maxJumpTime = 0.25f;
         jumpTime = 0.0f;
         move = 0;
-        //originalRotationValue = transform.rotation;
+        originalRotationValue = transform.rotation;
     }
 	
     void FixedUpdate()
@@ -100,10 +100,9 @@ public class PlayerController : MonoBehaviour {
             //non-physics
             //if (ceiling)
             //    slide();
-            if (!sliding && Input.GetKey(KeyCode.LeftControl) && !isJumpRunning)
+            if (!sliding && Input.GetKey(KeyCode.LeftControl) && grounded)//!isJumpRunning)
             {
                 slide();
-                //transform.Rotate(0, 0, Time.deltaTime * 5f);
             }
             else if (Input.GetKeyUp(KeyCode.LeftControl) && sliding)
             {
@@ -111,11 +110,15 @@ public class PlayerController : MonoBehaviour {
                 sliding = false;
                 anim.SetBool("Ground", true);
                 GetComponent<BoxCollider2D>().enabled = true;
-                //transform.rotation = Quaternion.Slerp(transform.rotation, originalRotationValue, Time.time);
+                transform.rotation = Quaternion.Slerp(transform.rotation, originalRotationValue, Time.time);
             }
             if(transform.position.y < -5)
             {
                 gOverScript.gameOver();
+            }
+            if (sliding)
+            {
+                transform.Rotate(0, 0, Time.deltaTime * -300f);
             }
         }
     }
@@ -171,8 +174,8 @@ public class PlayerController : MonoBehaviour {
         if (!grounded && Input.GetKeyDown(KeyCode.LeftControl))
         {
             //slideTimer = 0f;
-            anim.SetBool("Slide", true);
-            sliding = true;
+            //anim.SetBool("Slide", true);
+            //sliding = true;
             GetComponent<Rigidbody2D>().AddForce(Physics2D.gravity * 1.5f, ForceMode2D.Impulse);
         }
     }

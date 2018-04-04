@@ -61,7 +61,7 @@ public class SwordScript : MonoBehaviour {
                     
                     if(slowDown && decelerate < 3.0f)
                     {
-                        print(decelerate);
+                        //print(decelerate);
                         decelerate += Time.deltaTime;
                         acceleration = -0.1f;
                     }
@@ -79,7 +79,7 @@ public class SwordScript : MonoBehaviour {
                     
                     if (decelerate < 3.0f)
                     {
-                        print(decelerate);
+                        //print(decelerate);
                         decelerate += Time.deltaTime;
                         acceleration = -0.1f;
                     }
@@ -125,7 +125,7 @@ public class SwordScript : MonoBehaviour {
             if(swordSetup)
             {
                 this.gameObject.transform.SetParent(player.transform);
-                transform.position = new Vector3(player.transform.position.x , player.transform.position.y, 0);
+                transform.position = new Vector3(player.transform.position.x+0.5f , player.transform.position.y+0.3f, 0);
                 transform.Translate(1.5f, -0.1f, 0);
 
                 swordTimer = swordTime;  //set the swordTimer to public variable Xseconds

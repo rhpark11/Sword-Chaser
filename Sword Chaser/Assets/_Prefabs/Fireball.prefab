@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 027c959c4868bec468e3088f0a0b118f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 7
+  velocity: 8
   frequency: 0.8
   gameover: {fileID: 0}
 --- !u!114 &114609919453980814

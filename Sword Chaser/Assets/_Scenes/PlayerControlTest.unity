@@ -2926,17 +2926,17 @@ Prefab:
     - target: {fileID: 58078568470324878, guid: c39ca8bc11eee7b48b7d4539ba96185c,
         type: 2}
       propertyPath: m_Offset.x
-      value: 0.14817913
+      value: 0.15743801
       objectReference: {fileID: 0}
     - target: {fileID: 58078568470324878, guid: c39ca8bc11eee7b48b7d4539ba96185c,
         type: 2}
       propertyPath: m_Offset.y
-      value: -0.32465985
+      value: -0.11855345
       objectReference: {fileID: 0}
     - target: {fileID: 58078568470324878, guid: c39ca8bc11eee7b48b7d4539ba96185c,
         type: 2}
       propertyPath: m_Radius
-      value: 0.85697955
+      value: 1.0215112
       objectReference: {fileID: 0}
     - target: {fileID: 58423986538715660, guid: c39ca8bc11eee7b48b7d4539ba96185c,
         type: 2}
@@ -2946,6 +2946,11 @@ Prefab:
     - target: {fileID: 58078568470324878, guid: c39ca8bc11eee7b48b7d4539ba96185c,
         type: 2}
       propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 58078568470324878, guid: c39ca8bc11eee7b48b7d4539ba96185c,
+        type: 2}
+      propertyPath: m_UsedByEffector
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
