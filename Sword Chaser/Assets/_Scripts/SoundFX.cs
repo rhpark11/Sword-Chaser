@@ -36,14 +36,14 @@ public class SoundFX : MonoBehaviour {
         }
         else if (other.tag == "Rune")
         {
-            audioSource.GetComponent<AudioSource>();
+            //audioSource.GetComponent<AudioSource>();
             audioSource.PlayOneShot(audioClipRune);
         }
         //else if (/*other.tag == "Sword" &&*/ sword.GetComponent<SwordScript>().playerHasSword)
         //else if(other.transform.IsChildOf(this.gameObject.transform))
         else if(hasSword)
         {
-            audioSource.GetComponent<AudioSource>();
+            //audioSource.GetComponent<AudioSource>();
             audioSource.PlayOneShot(audioClipSword);
         }
         //Debug.Log("player has sword " + sword.GetComponent<SwordScript>().playerHasSword);

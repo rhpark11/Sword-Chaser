@@ -2913,48 +2913,7 @@ Prefab:
       propertyPath: gOverScript
       value: 
       objectReference: {fileID: 236735026}
-    - target: {fileID: 58423986538715660, guid: c39ca8bc11eee7b48b7d4539ba96185c,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: -0.4535316
-      objectReference: {fileID: 0}
-    - target: {fileID: 58423986538715660, guid: c39ca8bc11eee7b48b7d4539ba96185c,
-        type: 2}
-      propertyPath: m_Radius
-      value: 0.7483336
-      objectReference: {fileID: 0}
-    - target: {fileID: 58078568470324878, guid: c39ca8bc11eee7b48b7d4539ba96185c,
-        type: 2}
-      propertyPath: m_Offset.x
-      value: 0.15743801
-      objectReference: {fileID: 0}
-    - target: {fileID: 58078568470324878, guid: c39ca8bc11eee7b48b7d4539ba96185c,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: -0.11855345
-      objectReference: {fileID: 0}
-    - target: {fileID: 58078568470324878, guid: c39ca8bc11eee7b48b7d4539ba96185c,
-        type: 2}
-      propertyPath: m_Radius
-      value: 1.0215112
-      objectReference: {fileID: 0}
-    - target: {fileID: 58423986538715660, guid: c39ca8bc11eee7b48b7d4539ba96185c,
-        type: 2}
-      propertyPath: m_Offset.x
-      value: 0.35072237
-      objectReference: {fileID: 0}
-    - target: {fileID: 58078568470324878, guid: c39ca8bc11eee7b48b7d4539ba96185c,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 58078568470324878, guid: c39ca8bc11eee7b48b7d4539ba96185c,
-        type: 2}
-      propertyPath: m_UsedByEffector
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 60762549240920228, guid: c39ca8bc11eee7b48b7d4539ba96185c, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c39ca8bc11eee7b48b7d4539ba96185c, type: 2}
   m_IsPrefabParent: 0
 --- !u!114 &2102715782 stripped

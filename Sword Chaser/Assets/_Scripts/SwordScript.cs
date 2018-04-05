@@ -35,12 +35,15 @@ public class SwordScript : MonoBehaviour {
 
     public LayerMask whatIsGround;
 
+    //public Quaternion originalRotationValue;
+
     // Use this for initialization
     void Start () {
         //frequency = 1 / Time.deltaTime;
         player = GameObject.Find("Player1");
         //ps = GetComponent<ParticleSystem>();
-	}
+        //originalRotationValue = transform.rotation;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -139,9 +142,11 @@ public class SwordScript : MonoBehaviour {
                 startMoving = true;  //run the sword escape code
 
                 this.gameObject.transform.SetParent(null);  //break the parent child relationship
+                //this.gameObject.transform.SetPositionAndRotation(new Vector3(player.transform.position.x + 0.5f, player.transform.position.y + 0.3f, 0), originalRotationValue);
                 this.gameObject.transform.Translate(1.3f, 0, 0);  //break the collision by translation in local space
                 
                 playerHasSword = false;  //player no longer has the  sword
+                player.GetComponent<PlayerController>().canSlide = true;
 
                 //reset the variables for sword escape
                 elapsedTime = 0;
@@ -173,6 +178,7 @@ public class SwordScript : MonoBehaviour {
                 swordSetup = true;
                 //ps.enableEmission = false;
                 ps.Stop();
+                player.GetComponent<PlayerController>().canSlide = false;
             }
         }
         else if(collision.gameObject.tag == "Enemy Faker" && playerHasSword && !collision.GetComponent<CircleCollider2D>().enabled)

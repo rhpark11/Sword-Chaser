@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour {
     public Transform groundCheck;
     float groundRadius = 0.2f;
     public LayerMask whatIsGround;
+    public bool canSlide;
 
     public GameOver gOverScript;
 
@@ -57,6 +58,7 @@ public class PlayerController : MonoBehaviour {
         jumpTime = 0.0f;
         move = 0;
         originalRotationValue = transform.rotation;
+        canSlide = true;
     }
 	
     void FixedUpdate()
@@ -100,7 +102,7 @@ public class PlayerController : MonoBehaviour {
             //non-physics
             //if (ceiling)
             //    slide();
-            if (!sliding && Input.GetKey(KeyCode.LeftControl) && grounded)//!isJumpRunning)
+            if (!sliding && Input.GetKey(KeyCode.LeftControl) && grounded && canSlide)//!isJumpRunning)
             {
                 slide();
             }
